@@ -14,13 +14,9 @@
             <nav class="navbar">
                 <div class="logo">Bruno Pollarolo</div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#teaching">Teaching</a></li>
-                    <li><a href="#outreach">Outreach</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#charts">CHARTS Project</a></li>
+                    <li><a href="#research">Research Journey</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                 </ul>
                 <div class="theme-toggle">
@@ -40,12 +36,15 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Hi!</h1>
-                    <p class="subtitle">Electrical Engineering | Astronomy</p>
+                    <h1>Bruno Pollarolo</h1>
+                    <p class="subtitle">Exploring the Dynamic Radio Universe</p>
                     <div class="profile">
                         <div class="profile-text">
                             <p class="description">
-                                I am a senior undergraduate student at Universidad de Chile, pursuing a dual degree in Electrical Engineering and Astronomy. I focus on long-wavelength radio astronomy and instrumentation, and I am currently developing a spectrometer system for the Canadian-Chilean Array for Radio Transient Studies (CHARTS).
+                                Welcome! I'm an electrical engineer and astronomer passionate about uncovering the mysteries of the radio universe. My work sits at the intersection of cutting-edge technology and astrophysics, where I develop instrumentation to detect some of the most energetic and enigmatic phenomena in the cosmos.
+                            </p>
+                            <p class="description">
+                                Currently, I'm completing my dual degree at Universidad de Chile, focusing on long-wavelength radio astronomy and the development of advanced signal processing systems. My research centers on building the technological infrastructure needed to explore transient radio phenomena—fleeting cosmic events that challenge our understanding of extreme physics.
                             </p>
                             <div class="social-links">
                                 <a href="https://github.com/brunopollarolob" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -58,29 +57,77 @@
             </div>
         </section>
 
+        <!-- CHARTS Project Section -->
+        <section id="charts" class="charts-section">
+            <div class="container">
+                <h2>The CHARTS Project: Watching the Southern Sky</h2>
+                
+                <div class="blog-content">
+                    <h3>The Time-Domain Radio Frontier</h3>
+                    <p>
+                        The last decade has established time-domain radio astronomy as one of the most dynamic frontiers of modern astrophysics. By focusing on temporal rather than spatial variability, this field has uncovered a rich variety of energetic phenomena, ranging from pulsars and magnetar bursts to the recently discovered fast radio bursts (FRBs). These millisecond-duration flashes are among the brightest events in the radio sky, yet their origins remain one of the outstanding puzzles in high-energy astrophysics.
+                    </p>
+                    <p>
+                        Beyond their enigmatic nature, FRBs and related transient phenomena serve as powerful probes of extreme physical conditions, revealing how matter behaves in the presence of intense magnetic fields, relativistic outflows, and compact objects such as neutron stars. Observations of these events across multiple frequencies provide key insights into the mechanisms of coherent radio emission, particle acceleration, and plasma interactions in highly magnetized environments.
+                    </p>
+
+                    <h3>The Southern Sky Gap</h3>
+                    <p>
+                        Despite rapid progress, much of the sky, particularly at southern declinations, remains largely unexplored at the time-domain radio frontier. Most transient surveys have been conducted in the Northern Hemisphere, leaving limited coverage of regions such as the Galactic Center and nearby extragalactic space. Expanding observational capabilities in the south is therefore crucial to complete the global picture of the dynamic radio sky and to uncover new populations of transient sources that may be invisible to current facilities.
+                    </p>
+
+                    <h3>Enter CHARTS</h3>
+                    <p>
+                        The <strong>Canadian Chilean Array for Radio Transient Studies (CHARTS)</strong> project was conceived in this context. It aims to deploy a low-frequency interferometric array (300–500 MHz) in the Southern Hemisphere, combining wide sky coverage with sufficient sensitivity to detect, monitor, and help characterize fast radio bursts, magnetar flares, and other transient radio phenomena. CHARTS also seeks to strengthen the time-domain radio community within South America, where no FRB detections have yet been reported.
+                    </p>
+
+                    <div class="thesis-highlight">
+                        <div class="thesis-content">
+                            <h3>The F-Engine: Heart of the Digital Backend</h3>
+                            <p>
+                                At the heart of CHARTS lies a modular signal processing architecture that integrates scalable analog front-ends with a flexible digital backend optimized for transient searches. Within this backend, the <strong>F-engine</strong> (channelization engine) plays a central role: it digitizes and channelizes the signals from each antenna, producing frequency-domain data ready for correlation and transient search pipelines.
+                            </p>
+                            <p>
+                                The development of an efficient, high-throughput F-engine is therefore a key step toward enabling CHARTS to achieve its scientific objectives, supporting real-time monitoring of the southern sky and advancing our understanding of coherent radio emission from compact astrophysical sources.
+                            </p>
+                            <p>
+                                My thesis work focuses on this critical component—developing a full spectrometer system that allows a single digitizer to process multiple antennas through innovative de-multiplexing techniques, enabling wide-bandwidth digitization across CHARTS' 256-element array.
+                            </p>
+                        </div>
+                        <div class="thesis-image">
+                            <img src="images/rfsoc.jpg" alt="RFSoC 4x2 Board" class="research-image">
+                            <p class="image-caption">Xilinx AMD RFSoC 4x2 board—the foundation of CHARTS' digitization system</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Research & Internships Section -->
         <section id="research" class="research">
             <div class="container">
-                <h2>Research & Internships</h2>
+                <h2>Research Journey</h2>
                 
-                <div class="thesis-highlight">
-                    <div class="thesis-content">
-                        <h3>Thesis Project: Design and Implementation of the F-engine for CHARTS</h3>
-                        <p>My thesis work focuses on developing a full spectrometer system for the Canadian-Chilean Array for Radio Transient Studies (CHARTS) project. I'm developing a custom code for Xilinx AMD RFSoC 4x2 boards to process multiple antennas on a single digitizer through de-multiplexing.</p>
-                        <p>The core innovation allows demodulating several antennas from a single analog-to-digital converter (ADC), enabling wide-bandwidth digitization of multiple 200 MHz bandwidth antennas. This development is central to CHARTS' digitization capabilities, as a single digitizer will be able to convert 32 antenna analog signals of the CHARTS' 256 elements.</p>
-                    </div>
-                    <div class="thesis-image">
-                        <img src="images/rfsoc.jpg" alt="RFSoC 4x2 Board" class="research-image">
-                        <p class="image-caption">Xilinx AMD RFSoC 4x2 board used for CHARTS digitization development</p>
-                    </div>
+                <div class="blog-content">
+                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
+                        My path in radio astronomy has been shaped by hands-on experience with advanced digital signal processing systems, from designing spectrometers to testing transient detection capabilities.
+                    </p>
                 </div>
                 
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-content">
+                            <h3>Thesis Project: F-engine for CHARTS</h3>
+                            <p class="timeline-date">2024 – Present</p>
+                            <p>Developing a custom implementation for Xilinx AMD RFSoC 4x2 boards to process multiple antennas on a single digitizer through de-multiplexing. The innovation allows demodulating several antennas from a single ADC, enabling wide-bandwidth digitization of multiple 200 MHz bandwidth antennas. A single digitizer will convert 32 antenna analog signals of CHARTS' 256 elements.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
                             <h3>Intern, Millimeter Wave Laboratory</h3>
                             <p class="timeline-date">December 2024 – Present</p>
-                            <p>Currently developing a demux complex zooming spectrometer for CHARTS-8.</p>
+                            <p>Developing a demux complex zooming spectrometer for CHARTS-8, advancing the signal processing capabilities for transient detection.</p>
                         </div>
                     </div>
                     
@@ -88,128 +135,56 @@
                         <div class="timeline-content">
                             <h3>Guided Research (EL7850)</h3>
                             <p class="timeline-date">March 2024 – December 2024</p>
-                            <p>Extended RFSoC system to transmit arrays up to 4 GB for synthetic FRB injection into CHARTS-8. Enabled testing of antenna sensitivity and beam response.</p>
+                            <p>Extended the RFSoC system to transmit arrays up to 4 GB for synthetic FRB injection into CHARTS-8. This work enabled comprehensive testing of antenna sensitivity and beam response, crucial for validating the array's transient detection capabilities.</p>
                         </div>
                     </div>
                     
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3>Intern, Millimeter Wave Laboratory, Universidad de Chile</h3>
+                            <h3>Summer Intern, Millimeter Wave Laboratory</h3>
                             <p class="timeline-date">December 2023 – February 2024</p>
-                            <p>Designed and implemented a PYNQ overlay to generate customizable waveforms (up to 64 MB) and transmit via DAC on RFSoC 4x2 board.</p>
+                            <p>Designed and implemented a PYNQ overlay to generate customizable waveforms (up to 64 MB) and transmit via DAC on RFSoC 4x2 board. This foundational work established the framework for synthetic signal injection used in later FRB testing.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Teaching & Community</h3>
+                            <p class="timeline-date">2022 – Present</p>
+                            <p>Served as teaching assistant for courses in Advanced Calculus, Circuit Analysis, and Applied Electromagnetism at Universidad de Chile. Beyond the classroom, participated in public astronomy outreach through telescope observation events, sharing the wonders of the night sky with local communities.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Education Section -->
-        <section id="education" class="education">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Universidad de Chile</h3>
-                    <p class="timeline-date">2020 – Present</p>
-                    <ul>
-                        <li>Electrical Engineering (Thesis: Design and implementation of the F-engine for CHARTS)</li>
-                        <li>Astronomy BSc</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Teaching Experience Section -->
-        <section id="teaching" class="teaching">
-            <div class="container">
-            <h2>Teaching Assistanship Experience</h2>
-            <div class="teaching-items">
-                <div class="teaching-item">
-                <h3>Advanced Calculus and Applications (MA2002)</h3>
-                <p>Spring 2022, Universidad de Chile</p>
-                <p>Fall 2023, Universidad de Chile</p>
-                <p>Fall 2024, Universidad de Chile</p>
-                <p>Spring 2024, Universidad de Chile</p>
-                <p>Fall 2025, Universidad de Chile</p>
-                </div>
-                <div class="teaching-item">
-                <h3>Analysis and Design of Electrical Circuits (EL3101)</h3>
-                <p>Spring 2023, Universidad de Chile</p>
-                </div>
-                <div class="teaching-item">
-                <h3>Applied Electromagnetism (EL3103)</h3>
-                <p>Fall 2024, Universidad de Chile</p>
-                <p>Spring 2024, Universidad de Chile</p>
-                <p>Fall 2025, Universidad de Chile</p>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- Outreach Section -->
-        <section id="outreach" class="outreach">
-            <div class="container">
-            <h2>Outreach Activities</h2>
-            <div class="outreach-items">
-                <div class="outreach-item">
-                <h3>Telescope Observation Monitor</h3>
-                <p class="timeline-date">November 2021 – January 2023</p>
-                <p>Participated in public outreach activities organized by <i>Salidas Astronómicas</i>, engaging attendees in telescope observations. In the January 2023 version, contributed as a deep-space astrophotographer. Link to event details: <a href="https://penaflor.cl/observacion-y-astronomia-en-parque-el-trapiche-una-linda-experiencia-en-penaflor/" target="_blank">https://penaflor.cl/observacion-y-astronomia-en-parque-el-trapiche-una-linda-experiencia-en-penaflor/</a></p>
-                </div>
-                <div class="outreach-item">
-                <h3>Telescope Observation Monitor</h3>
-                <p class="timeline-date">March 2022</p>
-                <p>Facilitated telescope observation sessions at an event hosted by the <i>Centro Cultural Montecarmelo</i>, Municipality of Providencia, to celebrate Astronomy Day.</p>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Programming</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Matlab</li>
-                            <li>Verilog</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Vivado</li>
-                            <li>HFSS</li>
-                            <li>Simulink</li>
-                            <li>LTspice</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Operating Systems</h3>
-                        <ul>
-                            <li>Linux</li>
-                            <li>Windows</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Markup</h3>
-                        <ul>
-                            <li>LaTeX</li>
-                            <li>TikZ</li>
-                        </ul>
+                <div class="blog-content" style="margin-top: 3rem;">
+                    <h3>Technical Skills & Tools</h3>
+                    <p>My work draws on a diverse toolkit spanning software development, FPGA design, and electromagnetic simulation:</p>
+                    <div class="skills-inline">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Verilog</span>
+                        <span class="skill-badge">Matlab</span>
+                        <span class="skill-badge">Vivado</span>
+                        <span class="skill-badge">HFSS</span>
+                        <span class="skill-badge">Simulink</span>
+                        <span class="skill-badge">LaTeX</span>
+                        <span class="skill-badge">Linux</span>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- Gallery Section -->
         <section id="gallery" class="gallery">
             <div class="container">
-                <h2>Gallery</h2>
-                <p>Amateur deepsky astrophotography at <a href="https://www.instagram.com/franquis_astro/" target="_blank">@franquis_astro</a></p>
+                <h2>Astrophotography Gallery</h2>
+                <div class="blog-content">
+                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
+                        Beyond radio astronomy, I capture the visual beauty of the cosmos through deep-sky astrophotography. These images reveal the intricate structures of nebulae and the stunning details of our solar system's planets—a different wavelength, but the same wonder.
+                    </p>
+                    <p style="text-align: center;">
+                        Follow my astrophotography journey at <a href="https://www.instagram.com/franquis_astro/" target="_blank" style="color: var(--secondary); font-weight: bold;">@franquis_astro</a>
+                    </p>
+                </div>
                 <div class="gallery-container">
                     <div class="gallery-item">
                         <img src="images/Ara dragons 2.jpg" alt="Ara Dragons Nebula" loading="lazy">

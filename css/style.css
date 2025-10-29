@@ -275,135 +275,6 @@ section:nth-child(even) {
     margin-bottom: var(--spacing-sm);
 }
 
-/* Education */
-.education-item {
-    background-color: var(--card-bg);
-    padding: var(--spacing-lg);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px var(--shadow);
-    transition: var(--transition);
-    margin-bottom: var(--spacing-md);
-}
-
-.education-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px var(--shadow);
-}
-
-.education-item ul {
-    list-style-type: disc;
-    padding-left: var(--spacing-lg);
-    margin-top: var(--spacing-md);
-}
-
-/* Teaching */
-.teaching-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-md);
-}
-
-.teaching-item {
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px var(--shadow);
-    transition: var(--transition);
-}
-
-.teaching-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px var(--shadow);
-}
-
-/* Outreach */
-.outreach-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-md);
-}
-
-.outreach-item {
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px var(--shadow);
-    transition: var(--transition);
-}
-
-.outreach-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px var(--shadow);
-}
-
-/* Skills */
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-lg);
-}
-
-.skill-category {
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px var(--shadow);
-    transition: var(--transition);
-}
-
-.skill-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px var(--shadow);
-}
-
-.skill-category h3 {
-    color: var(--secondary);
-    margin-bottom: var(--spacing-md);
-}
-
-.skill-category ul {
-    list-style: none;
-}
-
-.skill-category li {
-    margin-bottom: 8px;
-    position: relative;
-    padding-left: 20px;
-}
-
-.skill-category li:before {
-    content: '•';
-    color: var(--secondary);
-    font-size: 1.2em;
-    position: absolute;
-    left: 0;
-}
-
-/* Awards */
-.awards-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
-}
-
-.award-item {
-    background-color: var(--card-bg);
-    padding: var(--spacing-md);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px var(--shadow);
-    transition: var(--transition);
-    text-align: center;
-}
-
-.award-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px var(--shadow);
-}
-
-.award-item h3 {
-    color: var(--secondary);
-}
-
 /* Gallery */
 .gallery-container {
     display: grid;
@@ -486,6 +357,68 @@ section:nth-child(even) {
 
 [data-theme="dark"] .header-scrolled {
     background-color: rgba(18, 18, 18, 0.95);
+}
+
+/* Blog Content Styles */
+.blog-content {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.blog-content h3 {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--primary);
+}
+
+.blog-content p {
+    margin-bottom: var(--spacing-md);
+    text-align: justify;
+}
+
+.blog-content strong {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+/* Skills Inline Badges */
+.skills-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+.skill-badge {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px var(--shadow);
+}
+
+[data-theme="dark"] .skill-badge {
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
+/* CHARTS Section Styles */
+.charts-section {
+    background-color: var(--section-bg);
+}
+
+.charts-section .blog-content {
+    margin-bottom: var(--spacing-lg);
 }
 
 /* Thesis Highlight Section */
