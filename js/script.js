@@ -53,9 +53,39 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleIcon.className = 'fas fa-moon';
         }
     }
+
+    // Language Toggle
+    const languageToggle = document.querySelector('.language-toggle');
+    const langText = document.querySelector('.lang-text');
+    
+    // Check for saved language preference
+    let currentLang = localStorage.getItem('language') || 'en';
+    htmlElement.setAttribute('lang', currentLang);
+    updateLanguageText(currentLang);
+    updateContent(currentLang);
+    
+    languageToggle.addEventListener('click', () => {
+        currentLang = currentLang === 'en' ? 'es' : 'en';
+        htmlElement.setAttribute('lang', currentLang);
+        localStorage.setItem('language', currentLang);
+        updateLanguageText(currentLang);
+        updateContent(currentLang);
+    });
+    
+    function updateLanguageText(lang) {
+        langText.textContent = lang === 'en' ? 'ES' : 'EN';
+    }
+    
+    function updateContent(lang) {
+        // Update all elements with data-en and data-es attributes
+        document.querySelectorAll('[data-en][data-es]').forEach(element => {
+            const text = element.getAttribute(`data-${lang}`);
+            element.innerHTML = text;
+        });
+    }
     
     // Scroll Animation
-    const fadeElements = document.querySelectorAll('.timeline-item, .education-item, .teaching-item, .outreach-item, .skill-category, .award-item');
+    const fadeElements = document.querySelectorAll('.timeline-item, .education-item, .teaching-item, .outreach-item, .skill-category, .award-item, .fade-in');
     
     const fadeInOptions = {
         threshold: 0.1,

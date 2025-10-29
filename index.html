@@ -6,6 +6,7 @@
     <title>Bruno Pollarolo | Personal website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/translations.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -14,11 +15,15 @@
             <nav class="navbar">
                 <div class="logo">Bruno Pollarolo</div>
                 <ul class="nav-links">
-                    <li><a href="#home">About</a></li>
-                    <li><a href="#charts">CHARTS Project</a></li>
-                    <li><a href="#research">Research Journey</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#home" data-en="About" data-es="Sobre mí">About</a></li>
+                    <li><a href="#charts" data-en="CHARTS Project" data-es="Proyecto CHARTS">CHARTS Project</a></li>
+                    <li><a href="#research" data-en="Research Journey" data-es="Trayectoria de investigación">Research Journey</a></li>
+                    <li><a href="#gallery" data-en="Gallery" data-es="Galería">Gallery</a></li>
                 </ul>
+                <div class="language-toggle">
+                    <i class="fas fa-language"></i>
+                    <span class="lang-text">ES</span>
+                </div>
                 <div class="theme-toggle">
                     <i class="fas fa-moon"></i>
                 </div>
@@ -37,14 +42,13 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>Bruno Pollarolo</h1>
-                    <p class="subtitle">Exploring the Dynamic Radio Universe</p>
                     <div class="profile">
                         <div class="profile-text">
-                            <p class="description">
-                                Welcome! I'm an electrical engineer and astronomer passionate about uncovering the mysteries of the radio universe. My work sits at the intersection of cutting-edge technology and astrophysics, where I develop instrumentation to detect some of the most energetic and enigmatic phenomena in the cosmos.
+                            <p class="description" data-en="I'm a senior Undergraduate student in electrical engineering and astronomy at Universidad de Chile working on instrumentation for radio astronomy. My research focuses on developing signal processing systems to detect transient phenomena: brief, high-energy events like fast radio bursts that originate from extreme astrophysical environments." data-es="Soy estudiante de ingeniería eléctrica y astronomía en la Universidad de Chile, dedicado al desarrollo de instrumentación para radioastronomía. Mi trabajo se centra en diseñar sistemas de procesamiento de señales para detectar fenómenos transitorios: eventos breves y de alta energía que se originan en los entornos más extremos del universo.">
+                                I'm a senior Undergraduate student in electrical engineering and astronomy at Universidad de Chile working on instrumentation for radio astronomy. My research focuses on developing signal processing systems to detect transient phenomena: brief, high-energy events that originate from extreme astrophysical environments.
                             </p>
-                            <p class="description">
-                                Currently, I'm completing my dual degree at Universidad de Chile, focusing on long-wavelength radio astronomy and the development of advanced signal processing systems. My research centers on building the technological infrastructure needed to explore transient radio phenomena—fleeting cosmic events that challenge our understanding of extreme physics.
+                            <p class="description" data-en="Currently finishing my dual degree at Universidad de Chile, I'm developing the digital backend for CHARTS, a radio interferometer designed to survey the southern sky for fast radio bursts and other transient signals." data-es="Actualmente finalizando mi doble titulación en la Universidad de Chile, desarrollo el backend digital de CHARTS, un interferómetro de baja frecuencia pensado para explorar el cielo austral en busca de ráfagas rápidas de radio (FRBs) y otras señales transitorias.">
+                                Currently finishing my dual degree at Universidad de Chile, I'm developing the digital backend for CHARTS, a radio interferometer designed to survey the southern sky for fast radio bursts and other transient signals.
                             </p>
                             <div class="social-links">
                                 <a href="https://github.com/brunopollarolob" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -60,43 +64,72 @@
         <!-- CHARTS Project Section -->
         <section id="charts" class="charts-section">
             <div class="container">
-                <h2>The CHARTS Project: Watching the Southern Sky</h2>
+                <h2 data-en="CHARTS" data-es="CHARTS">CHARTS: Listening to the Southern Sky</h2>
                 
                 <div class="blog-content">
-                    <h3>The Time-Domain Radio Frontier</h3>
-                    <p>
-                        The last decade has established time-domain radio astronomy as one of the most dynamic frontiers of modern astrophysics. By focusing on temporal rather than spatial variability, this field has uncovered a rich variety of energetic phenomena, ranging from pulsars and magnetar bursts to the recently discovered fast radio bursts (FRBs). These millisecond-duration flashes are among the brightest events in the radio sky, yet their origins remain one of the outstanding puzzles in high-energy astrophysics.
+                    <h3 data-en="Time-Domain Radio Astronomy" data-es="Radioastronomía en el dominio del tiempo">Time-Domain Radio Astronomy</h3>
+                    <p data-en="Over the past decade, radio astronomy has shifted focus from static observations to time-variable phenomena. This approach has revealed a diverse range of energetic events: pulsars, magnetar bursts, and <i>fast radio bursts</i> (FRBs), millisecond-duration flashes detectable from cosmological distances." data-es="En la última década, la radioastronomía ha pasado de observaciones estáticas a un enfoque centrado en fenómenos que varían en el tiempo. Esta perspectiva ha permitido descubrir una gran diversidad de eventos energéticos: púlsares, estallidos de magnetares y <i>fast radio bursts</i> (FRBs), destellos de milisegundos detectables a distancias cosmológicas.">
+                        Over the past decade, radio astronomy has shifted focus from static observations to time-variable phenomena. This approach has revealed a diverse range of energetic events: pulsars, magnetar bursts, and <i>fast radio bursts</i> (FRBs), millisecond-duration flashes detectable from cosmological distances.
                     </p>
-                    <p>
-                        Beyond their enigmatic nature, FRBs and related transient phenomena serve as powerful probes of extreme physical conditions, revealing how matter behaves in the presence of intense magnetic fields, relativistic outflows, and compact objects such as neutron stars. Observations of these events across multiple frequencies provide key insights into the mechanisms of coherent radio emission, particle acceleration, and plasma interactions in highly magnetized environments.
-                    </p>
-
-                    <h3>The Southern Sky Gap</h3>
-                    <p>
-                        Despite rapid progress, much of the sky, particularly at southern declinations, remains largely unexplored at the time-domain radio frontier. Most transient surveys have been conducted in the Northern Hemisphere, leaving limited coverage of regions such as the Galactic Center and nearby extragalactic space. Expanding observational capabilities in the south is therefore crucial to complete the global picture of the dynamic radio sky and to uncover new populations of transient sources that may be invisible to current facilities.
+                    <p data-en="FRBs, discovered in 2007, remain poorly understood. These signals originate from distant galaxies and release energies comparable to days of solar output in just milliseconds. They provide unique probes of extreme physics: matter in intense magnetic fields, relativistic plasma dynamics, and particle acceleration processes difficult to study elsewhere." data-es="Los FRBs, descubiertos en 2007, siguen siendo un enigma. Estas señales provienen de galaxias lejanas y liberan, en apenas milisegundos, energía equivalente a la que el Sol emite en varios días. Ofrecen una ventana única para estudiar física extrema: materia en campos magnéticos intensos, dinámica de plasmas relativistas y procesos de aceleración de partículas difíciles de observar en otros entornos.">
+                        FRBs, discovered in 2007, remain poorly understood. These signals originate from distant galaxies and release energies comparable to days of solar output in just milliseconds. They provide unique probes of extreme physics: matter in intense magnetic fields, relativistic plasma dynamics, and particle acceleration processes difficult to study elsewhere.
                     </p>
 
-                    <h3>Enter CHARTS</h3>
-                    <p>
-                        The <strong>Canadian Chilean Array for Radio Transient Studies (CHARTS)</strong> project was conceived in this context. It aims to deploy a low-frequency interferometric array (300–500 MHz) in the Southern Hemisphere, combining wide sky coverage with sufficient sensitivity to detect, monitor, and help characterize fast radio bursts, magnetar flares, and other transient radio phenomena. CHARTS also seeks to strengthen the time-domain radio community within South America, where no FRB detections have yet been reported.
+                    <h3 data-en="Coverage Gap in the Southern Hemisphere" data-es="Brecha de cobertura en el hemisferio sur">Coverage Gap in the Southern Hemisphere</h3>
+                    <p data-en="Most FRB surveys operate in the Northern Hemisphere, leaving southern declinations underexplored. This includes the Galactic Center region, where magnetar populations are concentrated. South America, specifically, has reported no FRB detections to date—primarily due to limited observational infrastructure." data-es="La mayoría de las búsquedas de FRBs se realizan en el hemisferio norte, por lo que gran parte del cielo austral permanece poco explorado. Entre esas regiones está el Centro Galáctico, con alta densidad de magnetares. En Sudamérica no se han reportado hasta ahora detecciones de FRBs, en gran medida por la limitada infraestructura observacional.">
+                        Most FRB surveys operate in the Northern Hemisphere, leaving southern declinations underexplored. This includes the Galactic Center region, where magnetar populations are concentrated. South America, specifically, has reported no FRB detections to date—primarily due to limited observational infrastructure.
                     </p>
 
+                    <h3 data-en="Enter CHARTS" data-es="Presentamos CHARTS">The CHARTS Array</h3>
+                    <p data-en="The <strong>Canadian-Chilean Array for Radio Transient Studies (CHARTS)</strong> addresses this gap. It's a collaboration between Universidad de Chile, the University of Toronto's Dunlap Institute, and the Millimeter Wave Laboratory to deploy a low-frequency interferometer optimized for transient searches in the southern sky." data-es="El <strong>Canadian-Chilean Array for Radio Transient Studies (CHARTS)</strong> busca reducir esta brecha. Es una colaboración entre la Universidad de Chile, el Dunlap Institute de la University of Toronto y el Millimeter Wave Laboratory, orientada a desplegar un interferómetro de baja frecuencia optimizado para búsquedas de transitorios en el cielo austral.">
+                        The <strong>Canadian-Chilean Array for Radio Transient Studies (CHARTS)</strong> addresses this gap. It's a collaboration between Universidad de Chile, the University of Toronto's Dunlap Institute, and the Millimeter Wave Laboratory to deploy a low-frequency interferometer optimized for transient searches in the southern sky.
+                    </p>
+                    <p data-en="CHARTS operates at 300–500 MHz, a frequency range where FRBs show enhanced brightness and which remains relatively undersampled by existing facilities. The array consists of 256 dipole antennas providing a large collecting area, designed to detect low-dispersion-measure FRBs that facilitate nearby host galaxy localization. Expected detection rate: approximately 100 FRBs per year at full operation." data-es="CHARTS opera entre 300 y 500 MHz, un rango donde los FRBs suelen ser más brillantes y que ha sido poco muestreado por instalaciones actuales. El arreglo está formado por 256 antenas dipolo que proveen una gran área de recolección, pensado para detectar FRBs de baja medida de dispersión y facilitar la localización de galaxias anfitrionas cercanas. Se estima una tasa de detección de ~100 FRBs por año en operación completa.">
+                        CHARTS operates at 300–500 MHz, a frequency range where FRBs show enhanced brightness and which remains relatively undersampled by existing facilities. The array consists of 256 dipole antennas providing a large collecting area, designed to detect low-dispersion-measure FRBs that facilitate nearby host galaxy localization. Expected detection rate: approximately 100 FRBs per year at full operation.
+                    </p>
+
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <img src="images/charts_antenna.webp" alt="CHARTS Dipole Antenna" class="fade-in" style="max-width: 600px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                        <p class="image-caption" data-en="CHARTS dipole antenna prototype—256 of these will form the array, working together to capture radio signals from transient cosmic events" data-es="Prototipo de antena dipolo de CHARTS—256 de estas formarán el arreglo y trabajarán en conjunto para captar señales de eventos cósmicos transitorios.">CHARTS dipole antenna prototype—256 of these will form the array, working together to capture radio signals from transient cosmic events</p>
+                    </div>
+
+                    <h3 data-en="Site Location" data-es="Ubicación del sitio">Site Location</h3>
+                    <p data-en="CHARTS will be deployed at <a href='https://www.openstreetmap.org/?mlat=-33.4211&mlon=-70.8638#map=14/-33.4211/-70.8638&layers=N' target='_blank' style='color: var(--secondary);'>Laguna Carén</a>, a protected park in Chile's Metropolitan Region near Santiago. The site provides low radio frequency interference and good access to southern declinations, including over 5 hours of daily Galactic Center visibility." data-es="CHARTS se desplegará en <a href='https://www.openstreetmap.org/?mlat=-33.4211&mlon=-70.8638#map=14/-33.4211/-70.8638&layers=N' target='_blank' style='color: var(--secondary);'>Laguna Carén</a>, un parque protegido en la Región Metropolitana, cercano a Santiago. El lugar presenta baja interferencia a bajas frecuencias y buen acceso a declinaciones australes, incluyendo más de 5 horas diarias de visibilidad del Centro Galáctico.">
+                        CHARTS will be deployed at <a href="https://www.openstreetmap.org/?mlat=-33.4211&mlon=-70.8638#map=14/-33.4211/-70.8638&layers=N" target="_blank" style="color: var(--secondary);">Laguna Carén</a>, a protected park in Chile's Metropolitan Region near Santiago. The site provides low radio frequency interference and good access to southern declinations, including over 5 hours of daily Galactic Center visibility.
+                    </p>
+
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <iframe width="100%" height="400" style="max-width: 800px; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);" src="https://www.openstreetmap.org/export/embed.html?bbox=-70.90292930603029%2C-33.45292756353726%2C-70.82465171813966%2C-33.389169567557765&layer=mapnik&marker=-33.421054418010364%2C-70.86379051208496" frameborder="0"></iframe>
+                        <p class="image-caption" data-en="CHARTS site location at Laguna Carén, Chile" data-es="Ubicación del sitio CHARTS en Laguna Carén, Chile">CHARTS site location at Laguna Carén, Chile</p>
+                    </div>
+
+                    <h3 data-en="Sky Coverage" data-es="Cobertura del cielo">Sky Coverage</h3>
+                    <p data-en="CHARTS targets southern hemisphere sources below zero degrees declination, providing extended coverage of the Galactic Center where magnetar populations are dense and potential local radio bursts may originate. The instantaneous field-of-view shown below represents the sky area monitored at any given time." data-es="CHARTS apunta a fuentes del hemisferio sur (declinaciones negativas), ofreciendo cobertura ampliada del Centro Galáctico, donde las poblaciones de magnetares son densas y podrían originarse estallidos locales. El campo de visión instantáneo que se muestra a continuación corresponde al área del cielo monitoreada en un momento dado.">
+                        CHARTS targets southern hemisphere sources below zero degrees declination, providing extended coverage of the Galactic Center where magnetar populations are dense and potential local radio bursts may originate. The instantaneous field-of-view shown below represents the sky area monitored at any given time.
+                    </p>
+
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <iframe width="100%" height="500" style="max-width: 900px; border: none; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);" src="plot/instantaneous_fov.html" frameborder="0"></iframe>
+                        <p class="image-caption" data-en="CHARTS instantaneous field-of-view (blue region) from the Santiago area, showing coverage of the Galactic Center and southern sky (Credits to Dr. Tomás Cassanelli for the plot)" data-es="Campo de visión instantáneo de CHARTS (región azul) desde el área de Santiago, mostrando la cobertura del Centro Galáctico y del cielo austral (créditos: Dr. Tomás Cassanelli).">CHARTS instantaneous field-of-view (blue region) from the Santiago area, showing coverage of the Galactic Center and southern sky (Credits to Dr. Tomás Cassanelli for the plot)</p>
+                    </div>
+
+                    
                     <div class="thesis-highlight">
                         <div class="thesis-content">
-                            <h3>The F-Engine: Heart of the Digital Backend</h3>
-                            <p>
-                                At the heart of CHARTS lies a modular signal processing architecture that integrates scalable analog front-ends with a flexible digital backend optimized for transient searches. Within this backend, the <strong>F-engine</strong> (channelization engine) plays a central role: it digitizes and channelizes the signals from each antenna, producing frequency-domain data ready for correlation and transient search pipelines.
+                            <h3 data-en="The F-Engine Development" data-es="Desarrollo del F-engine">The F-Engine Development</h3>
+                            <p data-en="Within CHARTS' signal processing architecture, the <strong>F-engine</strong> (channelization engine) performs the initial digitization and frequency channelization of antenna signals, producing data for downstream correlation and transient detection pipelines." data-es="Dentro de la arquitectura de CHARTS, el <strong>F-engine</strong> realiza la digitalización inicial y la canalización en frecuencia de las señales de antena, generando los datos que alimentan las etapas de correlación y las tuberías de detección de transitorios.">
+                                Within CHARTS' signal processing architecture, the <strong>F-engine</strong> (channelization engine) performs the initial digitization and frequency channelization of antenna signals, producing data for downstream correlation and transient detection pipelines.
                             </p>
-                            <p>
-                                The development of an efficient, high-throughput F-engine is therefore a key step toward enabling CHARTS to achieve its scientific objectives, supporting real-time monitoring of the southern sky and advancing our understanding of coherent radio emission from compact astrophysical sources.
+                            <p data-en="My thesis work addresses this component: developing a spectrometer system using demultiplexing techniques to process multiple antennas per digitizer. The approach allows a single analog-to-digital converter to handle several antenna inputs simultaneously, enabling wide-bandwidth digitization across the 256-element array without requiring individual digitizers for each antenna." data-es="Mi tesis aborda este componente: desarrollar un sistema de espectrómetro que usa técnicas de demultiplexación para procesar múltiples antenas por digitalizador. Esto permite que un único convertidor analógico-digital maneje varias entradas simultáneamente, posibilitando la digitalización de gran ancho de banda en el arreglo de 256 elementos sin necesidad de un digitalizador por antena.">
+                                My thesis work addresses this component: developing a spectrometer system using demultiplexing techniques to process multiple antennas per digitizer. The approach allows a single analog-to-digital converter to handle several antenna inputs simultaneously, enabling wide-bandwidth digitization across the 256-element array without requiring individual digitizers for each antenna.
                             </p>
-                            <p>
-                                My thesis work focuses on this critical component—developing a full spectrometer system that allows a single digitizer to process multiple antennas through innovative de-multiplexing techniques, enabling wide-bandwidth digitization across CHARTS' 256-element array.
+                            <p data-en="The challenge involves balancing data throughput, bandwidth requirements, and system scalability while maintaining the real-time processing necessary for transient detection in the southern sky." data-es="El desafío consiste en balancear el flujo de datos, los requisitos de ancho de banda y la escalabilidad del sistema, manteniendo al mismo tiempo el procesamiento en tiempo real necesario para la detección de transitorios en el cielo austral.">
+                                The challenge involves balancing data throughput, bandwidth requirements, and system scalability while maintaining the real-time processing necessary for transient detection in the southern sky.
                             </p>
                         </div>
-                        <div class="thesis-image">
-                            <img src="images/rfsoc.jpg" alt="RFSoC 4x2 Board" class="research-image">
-                            <p class="image-caption">Xilinx AMD RFSoC 4x2 board—the foundation of CHARTS' digitization system</p>
+                        <div class="thesis-image" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                            <img src="images/rfsoc.webp" alt="RFSoC 4x2 Board" class="research-image fade-in" style="max-width:100%;height:auto;display:block;">
+                            <p class="image-caption" style="text-align:center;" data-en="Xilinx AMD RFSoC 4x2 board used for CHARTS F-engine development" data-es="Placa Xilinx AMD RFSoC 4x2 empleada en el desarrollo del F-engine de CHARTS">Xilinx AMD RFSoC 4x2 board used for CHARTS F-engine development</p>
                         </div>
                     </div>
                 </div>
@@ -106,59 +139,71 @@
         <!-- Research & Internships Section -->
         <section id="research" class="research">
             <div class="container">
-                <h2>Research Journey</h2>
-                
+                <h2 data-en="Research & Work Experience" data-es="Investigación y experiencia laboral">Research & Work Experience</h2>
+
                 <div class="blog-content">
-                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
-                        My path in radio astronomy has been shaped by hands-on experience with advanced digital signal processing systems, from designing spectrometers to testing transient detection capabilities.
+                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;" data-en="Professional and research background in FPGA design, signal generation, and end-to-end testing for radio transient studies." data-es="Formación profesional y experiencia de investigación en diseño de FPGA, generación de señales y pruebas end-to-end para estudios de transitorios de radio.">
+                        Professional and research background in FPGA design, signal generation, and end-to-end testing for radio transient studies.
                     </p>
                 </div>
-                
+
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3>Thesis Project: F-engine for CHARTS</h3>
-                            <p class="timeline-date">2024 – Present</p>
-                            <p>Developing a custom implementation for Xilinx AMD RFSoC 4x2 boards to process multiple antennas on a single digitizer through de-multiplexing. The innovation allows demodulating several antennas from a single ADC, enabling wide-bandwidth digitization of multiple 200 MHz bandwidth antennas. A single digitizer will convert 32 antenna analog signals of CHARTS' 256 elements.</p>
+                            <h3 data-en="Intern, MWL — Universidad de Chile" data-es="Pasantía, MWL — Universidad de Chile">Intern, MWL — Universidad de Chile</h3>
+                            <p class="timeline-date" data-en="Dec 2023 – Feb 2024" data-es="Dic 2023 – Feb 2024">Dec 2023 – Feb 2024</p>
+                            <ul>
+                                <li data-en="Designed and implemented a PYNQ overlay in Vivado to generate arbitrary waveform signals (up to 64 MB)." data-es="Diseñé e implementé un overlay PYNQ en Vivado para generar señales de forma de onda arbitraria (hasta 64 MB).">Designed and implemented a PYNQ overlay in Vivado to generate arbitrary waveform signals (up to 64 MB).</li>
+                                <li data-en="Programmed and transmitted waveforms via the DAC on the RFSoC 4x2, laying the groundwork for a programmable waveform generation module later integrated into CHARTS." data-es="Programé y transmití formas de onda a través del DAC en el RFSoC 4x2, sentando las bases para un módulo programable de generación de formas de onda que luego se integró en CHARTS.">Programmed and transmitted waveforms via the DAC on the RFSoC 4x2, laying the groundwork for a programmable waveform generation module later integrated into CHARTS.</li>
+                                <li data-en="Gained hands-on experience in FPGA design, hardware verification, and system-level debugging." data-es="Adquirí experiencia práctica en diseño de FPGA.">Gained hands-on experience in FPGA design, hardware verification, and system-level debugging.</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3>Intern, Millimeter Wave Laboratory</h3>
-                            <p class="timeline-date">December 2024 – Present</p>
-                            <p>Developing a demux complex zooming spectrometer for CHARTS-8, advancing the signal processing capabilities for transient detection.</p>
+                            <h3 data-en="Guided Research (EL7850), DIE — Universidad de Chile" data-es="Investigación guiada (EL7850), DIE — Universidad de Chile">Guided Research (EL7850), DIE — Universidad de Chile</h3>
+                            <p class="timeline-date" data-en="Mar 2024 – Jul 2024" data-es="Mar 2024 – Jul 2024">Mar 2024 – Jul 2024</p>
+                            <ul>
+                                <li data-en="Extended an RFSoC-based transmission system to handle arrays up to 4 GB, enabling the generation and analog injection of synthetic FRBs for end-to-end testing." data-es="Extendí un sistema de transmisión basado en RFSoC para manejar arreglos de hasta 4 GB, permitiendo la generación e inyección analógica de FRB sintéticos para pruebas end-to-end.">Extended an RFSoC-based transmission system to handle arrays up to 4 GB, enabling the generation and analog injection of synthetic FRBs for end-to-end testing.</li>
+                                <li data-en="Modeled FRB time-domain voltages using inverse Fourier transforms of dynamic spectra generated with fitburst." data-es="Modelé los voltajes en el dominio del tiempo de FRBs usando transformadas inversas de Fourier de espectros dinámicos generados con fitburst.">Modeled FRB time-domain voltages using inverse Fourier transforms of dynamic spectra generated with fitburst.</li>
+                                <li data-en="Validated the full signal chain from waveform synthesis to analog transmission, ensuring stability and reproducibility of injected FRB-like signals." data-es="Validé la cadena de señal completa desde la síntesis de la forma de onda hasta la transmisión analógica, asegurando la estabilidad y reproducibilidad de las señales inyectadas tipo FRB.">Validated the full signal chain from waveform synthesis to analog transmission, ensuring stability and reproducibility of injected FRB-like signals.</li>
+                            </ul>
                         </div>
                     </div>
+
                     
+
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3>Guided Research (EL7850)</h3>
-                            <p class="timeline-date">March 2024 – December 2024</p>
-                            <p>Extended the RFSoC system to transmit arrays up to 4 GB for synthetic FRB injection into CHARTS-8. This work enabled comprehensive testing of antenna sensitivity and beam response, crucial for validating the array's transient detection capabilities.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Summer Intern, Millimeter Wave Laboratory</h3>
-                            <p class="timeline-date">December 2023 – February 2024</p>
-                            <p>Designed and implemented a PYNQ overlay to generate customizable waveforms (up to 64 MB) and transmit via DAC on RFSoC 4x2 board. This foundational work established the framework for synthetic signal injection used in later FRB testing.</p>
+                            <h3 data-en="Workshop: Dunlap Institute Summer School — University of Toronto" data-es="Taller: Dunlap Institute Summer School — University of Toronto">Workshop: Dunlap Institute Summer School — University of Toronto</h3>
+                            <p class="timeline-date" data-en="Jul 2025" data-es="Jul 2025">Jul 2025</p>
+                            <ul>
+                                <li data-en="Built a two-element radio interferometer from scratch: antenna construction, RF analog chain, and digital signal processing using an SDR." data-es="Construí un interferómetro de radio de dos elementos desde cero: construcción de antenas, cadena analógica RF y procesamiento digital de señal usando un SDR.">Built a two-element radio interferometer from scratch: antenna construction, RF analog chain, and digital signal processing using an SDR.</li>
+                                <li data-en="Strengthened international collaboration experience and practical understanding of low-frequency interferometry." data-es="Fortalecí la experiencia de colaboración internacional y la comprensión práctica de la interferometría a baja frecuencia.">Strengthened international collaboration experience and practical understanding of low-frequency interferometry.</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3>Teaching & Community</h3>
-                            <p class="timeline-date">2022 – Present</p>
-                            <p>Served as teaching assistant for courses in Advanced Calculus, Circuit Analysis, and Applied Electromagnetism at Universidad de Chile. Beyond the classroom, participated in public astronomy outreach through telescope observation events, sharing the wonders of the night sky with local communities.</p>
+                            <h3 data-en="Undergraduate Thesis, AstroLab — Universidad de Chile" data-es="Tesis de pregrado, AstroLab — Universidad de Chile">Undergraduate Thesis, AstroLab — Universidad de Chile</h3>
+                            <p class="timeline-date" data-en="Dec 2024 – Present" data-es="Dic 2024 – Presente">Dec 2024 – Present</p>
+                            <ul>
+                                <li data-en="Developing a complete digital spectrometer system for CHARTS." data-es="Desarrollando un sistema espectrómetro digital completo para CHARTS.">Developing a complete digital spectrometer system for CHARTS.</li>
+                                <li data-en="Implementing custom FPGA firmware for the Xilinx RFSoC 4x2 to process multiple antennas on a single digitizer through demultiplexing." data-es="Implementando firmware FPGA personalizado para el Xilinx RFSoC 4x2 para procesar múltiples antenas en un único digitalizador mediante demultiplexación.">Implementing custom FPGA firmware for the Xilinx RFSoC 4x2 to process multiple antennas on a single digitizer through demultiplexing.</li>
+                                <li data-en="Key innovation: simultaneous demodulation of several antennas from a single ADC, enabling wide-bandwidth digitization of multiple 200 MHz channels." data-es="Innovación clave: demodulación simultánea de varias antenas desde un único ADC, permitiendo la digitalización de ancho de banda amplio de múltiples canales de 200 MHz.">Key innovation: simultaneous demodulation of several antennas from a single ADC, enabling wide-bandwidth digitization of multiple 200 MHz channels.</li>
+                                <li data-en="Scalability: system designed so a single digitizer can acquire data from up to 32 antennas within the 256-element array." data-es="Escalabilidad: sistema diseñado para que un solo digitalizador pueda adquirir datos de hasta 32 antenas dentro del arreglo de 256 elementos.">Scalability: system designed so a single digitizer can acquire data from up to 32 antennas within the 256-element array.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
                 <div class="blog-content" style="margin-top: 3rem;">
-                    <h3>Technical Skills & Tools</h3>
-                    <p>My work draws on a diverse toolkit spanning software development, FPGA design, and electromagnetic simulation:</p>
+                    <h3 data-en="Technical Skills & Tools" data-es="Habilidades técnicas y herramientas">Technical Skills & Tools</h3>
+                    <p data-en="My work draws on a diverse toolkit spanning software development, FPGA design, and electromagnetic simulation:" data-es="Mi trabajo se apoya en un conjunto diverso de herramientas que abarcan desde desarrollo de software y diseño de FPGA hasta simulación electromagnética:">My work draws on a diverse toolkit spanning software development, FPGA design, and electromagnetic simulation:</p>
                     <div class="skills-inline">
                         <span class="skill-badge">Python</span>
                         <span class="skill-badge">Verilog</span>
@@ -176,34 +221,37 @@
         <!-- Gallery Section -->
         <section id="gallery" class="gallery">
             <div class="container">
-                <h2>Astrophotography Gallery</h2>
-                <div class="blog-content">
-                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
-                        Beyond radio astronomy, I capture the visual beauty of the cosmos through deep-sky astrophotography. These images reveal the intricate structures of nebulae and the stunning details of our solar system's planets—a different wavelength, but the same wonder.
+                <h2 data-en="Astrophotography Gallery" data-es="Galería de astrofotografía">Astrophotography Gallery</h2>
+               <div class="blog-content">
+                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;" 
+                    data-en="Outside of radio astronomy, I enjoy exploring the night sky through deep-sky astrophotography. It’s a way to capture the fine structures of nebulae and the subtle details of planets in our Solar System — another wavelength, but the same curiosity." 
+                    data-es="Fuera de la radioastronomía, disfruto explorando el cielo nocturno mediante astrofotografía de cielo profundo. Es una forma de capturar las estructuras finas de las nebulosas y los sutiles detalles de los planetas del Sistema Solar: otra longitud de onda, pero la misma curiosidad.">
+                        Outside of radio astronomy, I enjoy exploring the night sky through deep-sky astrophotography. It’s a way to capture the fine structures of nebulae and the subtle details of planets in our Solar System — another wavelength, but the same curiosity.
                     </p>
+
                     <p style="text-align: center;">
-                        Follow my astrophotography journey at <a href="https://www.instagram.com/franquis_astro/" target="_blank" style="color: var(--secondary); font-weight: bold;">@franquis_astro</a>
+                        <span data-en="Follow my astrophotography journey at" data-es="Sigue mi trabajo en astrofotografía en">Follow my astrophotography journey at</span> <a href="https://www.instagram.com/franquis_astro/" target="_blank" style="color: var(--secondary); font-weight: bold;">@franquis_astro</a>
                     </p>
                 </div>
                 <div class="gallery-container">
                     <div class="gallery-item">
-                        <img src="images/Ara dragons 2.jpg" alt="Ara Dragons Nebula" loading="lazy">
+                        <img src="images/Ara dragons 2.webp" alt="Ara Dragons Nebula" class="fade-in" loading="lazy">
                         <div class="gallery-caption">Ara Dragons Nebula (NGC6188)</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/Roseta.jpg" alt="Rosette Nebula" loading="lazy">
+                        <img src="images/Roseta.webp" alt="Rosette Nebula" class="fade-in" loading="lazy">
                         <div class="gallery-caption">Rosette Nebula (NGC2237)</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/Saturno.jpg" alt="Saturn" loading="lazy">
+                        <img src="images/Saturno.webp" alt="Saturn" class="fade-in" loading="lazy">
                         <div class="gallery-caption">Saturn</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/starless.jpg" alt="Starless Sky" loading="lazy">
+                        <img src="images/starless.webp" alt="Starless Sky" class="fade-in" loading="lazy">
                         <div class="gallery-caption">Starless Eagle Nebula (M16)</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/Tarantula v2.jpg" alt="Tarantula Nebula" loading="lazy">
+                        <img src="images/Tarantula v2.webp" alt="Tarantula Nebula" class="fade-in" loading="lazy">
                         <div class="gallery-caption">Tarantula Nebula (NGC2070)</div>
                     </div>
                 </div>
@@ -215,7 +263,7 @@
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 Bruno Pollarolo</p>
-                <p>Contact: <a href="mailto:bruno.pollarolo@ug.uchile.cl">bruno.pollarolo@ug.uchile.cl</a></p>
+                <p><span data-en="Contact:" data-es="Contacto:">Contact:</span> <a href="mailto:bruno.pollarolo@ug.uchile.cl">bruno.pollarolo@ug.uchile.cl</a></p>
             </div>
         </div>
     </footer>

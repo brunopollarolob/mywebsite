@@ -148,6 +148,28 @@ section:nth-child(even) {
     margin: 0 var(--spacing-md);
 }
 
+.language-toggle {
+    cursor: pointer;
+    margin-left: var(--spacing-md);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.language-toggle:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.lang-text {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
 .theme-toggle {
     cursor: pointer;
     margin-left: var(--spacing-md);
