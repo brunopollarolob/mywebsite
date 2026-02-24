@@ -21,7 +21,9 @@
                     <li><a href="#charts" data-en="CHARTS Project" data-es="Proyecto CHARTS">CHARTS Project</a></li>
                     <li><a href="#research" data-en="Research Journey" data-es="Trayectoria de investigación">Research
                             Journey</a></li>
-                    <li><a href="#gallery" data-en="Gallery" data-es="Galería">Gallery</a></li>
+                    <li><a href="#gallery" data-en="Astrophotography" data-es="Astrofotografía">Astrophotography</a>
+                    </li>
+                    <li><a href="#mountaineering" data-en="Mountaineering" data-es="Montañismo">Mountaineering</a></li>
                 </ul>
                 <div class="language-toggle">
                     <i class="fas fa-language"></i>
@@ -85,7 +87,8 @@
         <!-- CHARTS Project Section -->
         <section id="charts" class="charts-section">
             <div class="container">
-                <h2 data-en="CHARTS" data-es="CHARTS">CHARTS: Listening to the Southern Sky</h2>
+                <h2 data-en="Canadian-Chilean Array for Radio Transient Studies (CHARTS)"
+                    data-es="Canadian-Chilean Array for Radio Transient Studies (CHARTS)">CHARTS</h2>
 
                 <div class="blog-content">
                     <p data-en="CHARTS is a compact, wide-field interferometer designed to explore the transient radio sky in the 300–500 MHz band. Its architecture prioritizes the number of elements and instantaneous field of view over raw bandwidth, aiming to maximize the detection rate of Fast Radio Bursts (FRBs) and other millisecond-duration transients."
@@ -97,7 +100,7 @@
                     </p>
 
                     <div style="text-align: center; margin: 2rem 0;">
-                        <iframe width="100%" height="500"
+                        <iframe class="plot-iframe" width="100%" height="500"
                             style="max-width: 900px; border: none; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);"
                             src="plot/instantaneous_fov.html" frameborder="0"></iframe>
                         <p class="image-caption"
@@ -122,73 +125,72 @@
 
                     <div style="text-align: center; margin: 2rem 0; width: 100%;" class="fade-in">
                         <div style="overflow-x: auto; padding: 1rem;">
-                            <table
-                                style="width: 100%; max-width: 700px; margin: 0 auto; border-collapse: collapse; text-align: left; font-family: var(--font-main); background-color: white; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                            <table class="data-table table-left">
                                 <thead>
-                                    <tr style="border-top: 2px solid black; border-bottom: 1px solid black;">
-                                        <th style="padding: 12px; font-weight: bold;">Parameter</th>
-                                        <th style="padding: 12px; font-weight: bold;">Value</th>
+                                    <tr>
+                                        <th>Parameter</th>
+                                        <th>Value</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="padding: 10px;">Passband</td>
-                                        <td style="padding: 10px;">ν = 300–501.6 MHz</td>
+                                        <td>Passband</td>
+                                        <td>ν = 300–501.6 MHz</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Bandwidth</td>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Δν = 201.6 MHz</td>
+                                        <td>Bandwidth</td>
+                                        <td>Δν = 201.6 MHz</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">Channel width</td>
-                                        <td style="padding: 10px;">Δν<sub>ch</sub> = 300 kHz</td>
+                                        <td>Channel width</td>
+                                        <td>Δν<sub>ch</sub> = 300 kHz</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Number of channels</td>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">N<sub>ν</sub> = 672</td>
+                                        <td>Number of channels</td>
+                                        <td>N<sub>ν</sub> = 672</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">Number of antennas</td>
-                                        <td style="padding: 10px;">N<sub>a</sub> = 256</td>
+                                        <td>Number of antennas</td>
+                                        <td>N<sub>a</sub> = 256</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Number of beams</td>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">N<sub>b</sub> = 1000</td>
+                                        <td>Number of beams</td>
+                                        <td>N<sub>b</sub> = 1000</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">Sample time (real-time search)</td>
-                                        <td style="padding: 10px;">t<sub>rs</sub> ≲ 1 ms</td>
+                                        <td>Sample time (real-time search)</td>
+                                        <td>t<sub>rs</sub> ≲ 1 ms</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Sample time (baseband
+                                        <td>Sample time (baseband
                                             dump)</td>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">t<sub>s</sub> = 3.33 µs
+                                        <td>t<sub>s</sub> = 3.33 µs
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">Antenna beam</td>
-                                        <td style="padding: 10px;">HPBW<sub>a</sub> ≈ 100°</td>
+                                        <td>Antenna beam</td>
+                                        <td>HPBW<sub>a</sub> ≈ 100°</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Antenna gain</td>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">G<sub>a</sub> ≈ 7 dBi</td>
+                                        <td>Antenna gain</td>
+                                        <td>G<sub>a</sub> ≈ 7 dBi</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">Polarizations</td>
-                                        <td style="padding: 10px;">n<sub>p</sub> = 1</td>
+                                        <td>Polarizations</td>
+                                        <td>n<sub>p</sub> = 1</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Field of View</td>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Ω<sub>a</sub> ≈
+                                        <td>Field of View</td>
+                                        <td>Ω<sub>a</sub> ≈
                                             8×10<sup>3</sup> deg²</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">System temperature</td>
-                                        <td style="padding: 10px;">T<sub>sys</sub> ≤ 100 K</td>
+                                        <td>System temperature</td>
+                                        <td>T<sub>sys</sub> ≤ 100 K</td>
                                     </tr>
-                                    <tr style="border-bottom: 2px solid black;">
-                                        <td style="padding: 10px; background-color: #f9f9f9;">Maximum DM</td>
-                                        <td style="padding: 10px; background-color: #f9f9f9;">DM < 1000 pc cm<sup>
+                                    <tr>
+                                        <td>Maximum DM</td>
+                                        <td>DM < 1000 pc cm<sup>
                                                 -3</sup></td>
                                     </tr>
                                 </tbody>
@@ -234,8 +236,8 @@
 
                     <div class="thesis-highlight">
                         <div class="thesis-content">
-                            <h3 data-en="My Contribution: F-Engine & Digital Backend"
-                                data-es="Mi Contribución: F-Engine y Backend Digital">My Contribution: F-Engine &
+                            <h3 data-en="My Contribution: F-engine & digital backend"
+                                data-es="Mi Contribución: F-engine y Backend Digital">My Contribution: F-engine &
                                 Digital Backend</h3>
                             <p data-en="The development of CHARTS has been a highly collaborative interdisciplinary effort. Analog components were primarily developed by Dr. Albert Wai Kit Lau and MSc Sebastián Manosalva, while the software for the searching nodes is being developed collaboratively by MSc Gonzalo Burgos and MSc student Juan Pablo Contreras."
                                 data-es="El desarrollo de CHARTS ha sido un esfuerzo interdisciplinario colaborativo. Los componentes analógicos fueron desarrollados en gran parte por el Dr. Albert Wai Kit Lau y el MSc Sebastián Manosalva, mientras el software para los nodos de búsqueda es desarrollado por el MSc Gonzalo Burgos y el estudiante Juan Pablo Contreras.">
@@ -244,10 +246,10 @@
                                 Manosalva, while the software for the searching nodes is being developed collaboratively
                                 by MSc Gonzalo Burgos and MSc student Juan Pablo Contreras.
                             </p>
-                            <p data-en="My work leads the digital development of the system. This includes extensive RFSoC measurements, RFI characterizations, and specifically the design of the F-Engine: the channelization engine responsible for digitizing and frequency-channelizing the massive incoming data stream."
-                                data-es="Mi trabajo lidera el desarrollo digital del sistema. Esto incluye extensas mediciones en tarjetas RFSoC, caracterizaciones del ambiente de RFI de la zona, y específicamente el diseño del F-Engine, el motor de canalización responsable de digitalizar las señales entrantes.">
+                            <p data-en="My work leads the digital development of the system. This includes extensive RFSoC measurements, RFI characterizations, and specifically the design of the F-engine: the channelization engine responsible for digitizing and frequency-channelizing the massive incoming data stream."
+                                data-es="Mi trabajo lidera el desarrollo digital del sistema. Esto incluye extensas mediciones en tarjetas RFSoC, caracterizaciones del ambiente de RFI de la zona, y específicamente el diseño del F-engine, el motor de canalización responsable de digitalizar las señales entrantes.">
                                 My work leads the digital development of the system. This includes extensive RFSoC
-                                measurements, RFI characterizations, and specifically the design of the F-Engine: the
+                                measurements, RFI characterizations, and specifically the design of the F-engine: the
                                 channelization engine responsible for digitizing and frequency-channelizing the massive
                                 incoming data stream.
                             </p>
@@ -265,27 +267,26 @@
                             <img src="images/rfsoc.webp" alt="RFSoC 4x2 Board" class="research-image fade-in"
                                 style="max-width:100%;height:auto;display:block;">
                             <p class="image-caption" style="text-align:center;"
-                                data-en="RFSoC node board utilized for the F-Engine processing block."
-                                data-es="Nodo de procesamiento basado en RFSoC para la implementación del bloque de F-Engine.">
-                                RFSoC node board utilized for the F-Engine processing block.</p>
+                                data-en="RFSoC 4x2 board utilized for the F-engine development."
+                                data-es="Plataforma RFSoC 4x2 utilizada para el desarrollo del F-engine.">
+                                RFSoC 4x2 board utilized for the F-engine development.</p>
                         </div>
                     </div>
 
                     <div style="text-align: center; margin: 4rem 0; width: 100%;" class="fade-in">
-                        <div
-                            style="background-color: white; padding: 2rem 1rem; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow); overflow-x: auto;">
+                        <div class="svg-container">
                             <!-- Figure 3.7 FDM Block Diagram SVG -->
                             <svg viewBox="0 0 800 400" width="100%"
                                 style="min-width: 600px; max-width: 800px; font-family: var(--font-main);">
                                 <style>
                                     .line {
-                                        stroke: black;
+                                        stroke: var(--text);
                                         stroke-width: 1.5;
                                         fill: none;
                                     }
 
                                     .signal {
-                                        stroke: blue;
+                                        stroke: #4285F4;
                                         stroke-width: 1.5;
                                         fill: none;
                                         stroke-linejoin: round;
@@ -293,14 +294,14 @@
 
                                     .label {
                                         font-size: 14px;
-                                        fill: black;
+                                        fill: var(--text);
                                     }
 
                                     .math {
                                         font-style: italic;
                                         font-family: var(--font-main);
                                         font-size: 16px;
-                                        fill: black;
+                                        fill: var(--text);
                                     }
 
                                     .sub {
@@ -309,16 +310,25 @@
                                     }
 
                                     .gray {
-                                        fill: #666;
+                                        fill: #888;
                                         font-family: var(--font-main);
                                         font-size: 13px;
                                     }
 
                                     .dashed {
-                                        stroke: black;
+                                        stroke: var(--text);
                                         stroke-width: 1.5;
                                         fill: none;
                                         stroke-dasharray: 4, 4;
+                                    }
+
+                                    polygon[fill="black"],
+                                    circle[fill="black"] {
+                                        fill: var(--text);
+                                    }
+
+                                    polygon[fill="gray"] {
+                                        fill: #888;
                                     }
                                 </style>
 
@@ -481,64 +491,63 @@
 
                     <div style="text-align: center; margin: 4rem 0; width: 100%;" class="fade-in">
                         <div style="overflow-x: auto; padding: 1rem;">
-                            <table
-                                style="width: 100%; max-width: 650px; margin: 0 auto; border-collapse: collapse; text-align: center; font-family: var(--font-main); background-color: white; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                            <table class="data-table table-center">
                                 <thead>
-                                    <tr style="border-top: 2px solid black; border-bottom: 1px solid black;">
-                                        <th style="padding: 12px; font-weight: bold;">Chain Δν<sub>i</sub></th>
-                                        <th style="padding: 12px; font-weight: bold;">Frequency range</th>
-                                        <th style="padding: 12px; font-weight: bold;">LO tone</th>
-                                        <th style="padding: 12px; font-weight: bold;">Band</th>
+                                    <tr>
+                                        <th>Chain Δν<sub>i</sub></th>
+                                        <th>Frequency range</th>
+                                        <th>LO tone</th>
+                                        <th>Band</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="padding: 10px;">0</td>
-                                        <td style="padding: 10px;">300–501.6 MHz</td>
-                                        <td style="padding: 10px;">/</td>
-                                        <td style="padding: 10px;">USB</td>
+                                        <td>0</td>
+                                        <td>300–501.6 MHz</td>
+                                        <td>/</td>
+                                        <td>USB</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">1</td>
-                                        <td style="padding: 10px;">564–765.6 MHz</td>
-                                        <td style="padding: 10px;">1065.6 MHz</td>
-                                        <td style="padding: 10px;">LSB</td>
+                                        <td>1</td>
+                                        <td>564–765.6 MHz</td>
+                                        <td>1065.6 MHz</td>
+                                        <td>LSB</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">2</td>
-                                        <td style="padding: 10px;">830.4–1032 MHz</td>
-                                        <td style="padding: 10px;">1332.0 MHz</td>
-                                        <td style="padding: 10px;">LSB</td>
+                                        <td>2</td>
+                                        <td>830.4–1032 MHz</td>
+                                        <td>1332.0 MHz</td>
+                                        <td>LSB</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">3</td>
-                                        <td style="padding: 10px;">1099.2–1300.8 MHz</td>
-                                        <td style="padding: 10px;">1600.8 MHz</td>
-                                        <td style="padding: 10px;">LSB</td>
+                                        <td>3</td>
+                                        <td>1099.2–1300.8 MHz</td>
+                                        <td>1600.8 MHz</td>
+                                        <td>LSB</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">4</td>
-                                        <td style="padding: 10px;">1365.6–1567.2 MHz</td>
-                                        <td style="padding: 10px;">1065.6 MHz</td>
-                                        <td style="padding: 10px;">USB</td>
+                                        <td>4</td>
+                                        <td>1365.6–1567.2 MHz</td>
+                                        <td>1065.6 MHz</td>
+                                        <td>USB</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">5</td>
-                                        <td style="padding: 10px;">1632–1833.6 MHz</td>
-                                        <td style="padding: 10px;">1332.0 MHz</td>
-                                        <td style="padding: 10px;">USB</td>
+                                        <td>5</td>
+                                        <td>1632–1833.6 MHz</td>
+                                        <td>1332.0 MHz</td>
+                                        <td>USB</td>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px;">6</td>
-                                        <td style="padding: 10px;">1900.8–2102.4 MHz</td>
-                                        <td style="padding: 10px;">1600.8 MHz</td>
-                                        <td style="padding: 10px;">USB</td>
+                                        <td>6</td>
+                                        <td>1900.8–2102.4 MHz</td>
+                                        <td>1600.8 MHz</td>
+                                        <td>USB</td>
                                     </tr>
-                                    <tr style="border-bottom: 2px solid black;">
-                                        <td style="padding: 10px;">7</td>
-                                        <td style="padding: 10px;">2164.8–2366.4 MHz</td>
-                                        <td style="padding: 10px;">1864.8 MHz</td>
-                                        <td style="padding: 10px;">USB</td>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>2164.8–2366.4 MHz</td>
+                                        <td>1864.8 MHz</td>
+                                        <td>USB</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -629,10 +638,10 @@
                                 School — University of Toronto</h3>
                             <p class="timeline-date" data-en="Jul 2025" data-es="Jul 2025">Jul 2025</p>
                             <ul>
-                                <li data-en="Built a two-element radio interferometer from scratch: antenna construction, RF analog chain, and digital signal processing using an SDR."
-                                    data-es="Construí un interferómetro de radio de dos elementos desde cero: construcción de antenas, cadena analógica RF y procesamiento digital de señal usando un SDR.">
+                                <li data-en="Built a two-element radio interferometer from scratch: antenna construction, RF analog chain, and post-processing with Python."
+                                    data-es="Construí un interferómetro de radio de dos elementos desde cero: construcción de antenas, cadena analógica RF y post-procesamiento con Python.">
                                     Built a two-element radio interferometer from scratch: antenna construction, RF
-                                    analog chain, and digital signal processing using an SDR.</li>
+                                    analog chain, and post-processing with Python.</li>
                                 <li data-en="Strengthened international collaboration experience and practical understanding of low-frequency interferometry."
                                     data-es="Fortalecí la experiencia de colaboración internacional y la comprensión práctica de la interferometría a baja frecuencia.">
                                     Strengthened international collaboration experience and practical understanding of
@@ -646,8 +655,9 @@
                             <h3 data-en="Undergraduate Thesis, AstroLab — Universidad de Chile"
                                 data-es="Tesis de pregrado, AstroLab — Universidad de Chile">Undergraduate Thesis,
                                 AstroLab — Universidad de Chile</h3>
-                            <p class="timeline-date" data-en="Dec 2024 – Present" data-es="Dic 2024 – Presente">Dec 2024
-                                – Present</p>
+                            <p class="timeline-date" data-en="Dec 2024 – Mar 2026" data-es="Dic 2024 – Mar 2026">Dec
+                                2024
+                                – Mar 2026</p>
                             <ul>
                                 <li data-en="Developing a complete digital spectrometer system for CHARTS."
                                     data-es="Desarrollando un sistema espectrómetro digital completo para CHARTS.">
@@ -660,10 +670,6 @@
                                     data-es="Innovación clave: demodulación simultánea de varias antenas desde un único ADC, permitiendo la digitalización de ancho de banda amplio de múltiples canales de 200 MHz.">
                                     Key innovation: simultaneous demodulation of several antennas from a single ADC,
                                     enabling wide-bandwidth digitization of multiple 200 MHz channels.</li>
-                                <li data-en="Scalability: system designed so a single digitizer can acquire data from up to 32 antennas within the 256-element array."
-                                    data-es="Escalabilidad: sistema diseñado para que un solo digitalizador pueda adquirir datos de hasta 32 antenas dentro del arreglo de 256 elementos.">
-                                    Scalability: system designed so a single digitizer can acquire data from up to 32
-                                    antennas within the 256-element array.</li>
                             </ul>
                         </div>
                     </div>
@@ -689,13 +695,12 @@
                 <span class="skill-badge">Linux</span>
             </div>
         </div>
-        </div>
         </section>
 
         <!-- Gallery Section -->
         <section id="gallery" class="gallery">
             <div class="container">
-                <h2 data-en="Astrophotography Gallery" data-es="Galería de astrofotografía">Astrophotography Gallery
+                <h2 data-en="Astrophotography" data-es="Astrofotografía">Astrophotography
                 </h2>
                 <div class="blog-content">
                     <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;"
@@ -743,12 +748,122 @@
                 </div>
             </div>
         </section>
+
+        <!-- Mountaineering Gallery Section -->
+        <section id="mountaineering" class="charts-section">
+            <div class="container">
+                <h2 data-en="Mountaineering" data-es="Montañismo">Mountaineering
+                </h2>
+                <div class="blog-content">
+                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;"
+                        data-en="I started mountaineering in 2023 by taking a basic mountaineering course with the <a href='https://www.instagram.com/club_andino_universitario/' target='_blank' style='color: var(--primary); font-weight: bold;'>Club Andino Universitario (CAU)</a>. Since then, I've enjoyed exploring the peaks of the Andes."
+                        data-es="Comencé en el montañismo el año 2023 realizando un curso de montañismo básico con el <a href='https://www.instagram.com/club_andino_universitario/' target='_blank' style='color: var(--primary); font-weight: bold;'>Club Andino Universitario (CAU)</a>. Desde entonces, disfruto explorar las cumbres de la cordillera de los Andes.">
+                        I started mountaineering in 2023 by taking a basic mountaineering course with the <a
+                            href='https://www.instagram.com/club_andino_universitario/' target='_blank'
+                            style='color: var(--primary); font-weight: bold;'>Club Andino Universitario (CAU)</a>. Since
+                        then, I've enjoyed exploring the peaks of the Andes.
+                    </p>
+                </div>
+
+                <div class="blog-content">
+                    <h3>Cerro Tortólas (6160 msnm)</h3>
+                    <div class="masonry-gallery">
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro tortólas 6160 msnm/cerro_tortólas_6160.webp" loading="lazy"
+                                alt="Cerro Tortólas">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro tortólas 6160 msnm/IMG_9550.webp" loading="lazy"
+                                alt="Cerro Tortólas ascending">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro tortólas 6160 msnm/IMG_9621.webp" loading="lazy"
+                                alt="Cerro Tortólas summit">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro tortólas 6160 msnm/tortolas.webp" loading="lazy"
+                                alt="Cerro Tortólas landscape">
+                        </div>
+                    </div>
+
+                    <h3>Volcán San José (5856 msnm)</h3>
+                    <div class="masonry-gallery">
+                        <div class="masonry-item fade-in">
+                            <img src="images/Volcán San José 5856 msnm/PXL_20260215_134454295.webp" loading="lazy"
+                                alt="Volcán San José">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Volcán San José 5856 msnm/PXL_20260216_115010292.webp" loading="lazy"
+                                alt="Volcán San José summit">
+                        </div>
+                    </div>
+
+                    <h3>Cerro El Plomo (5424 msnm)</h3>
+                    <div class="masonry-gallery">
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro El Plomo 5424 msnm/1771964895753.webp" loading="lazy"
+                                alt="Cerro El Plomo">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro El Plomo 5424 msnm/1771964895792.webp" loading="lazy"
+                                alt="Cerro El Plomo ascending">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro El Plomo 5424 msnm/IMG_3467.jpg" loading="lazy"
+                                alt="Cerro El Plomo landscape">
+                        </div>
+                    </div>
+
+                    <h3>Cerro Evelio (4225 msnm)</h3>
+                    <div class="masonry-gallery">
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro Evelio 4225 msnm/background.webp" loading="lazy"
+                                alt="Cerro Evelio view">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro Evelio 4225 msnm/IMG_1091.webp" loading="lazy"
+                                alt="Cerro Evelio ascending">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro Evelio 4225 msnm/IMG_1130.webp" loading="lazy"
+                                alt="Cerro Evelio summit">
+                        </div>
+                    </div>
+
+                    <h3>Volcán Lanín (3776 msnm)</h3>
+                    <div class="masonry-gallery">
+                        <div class="masonry-item fade-in">
+                            <img src="images/Volcán Lanín/1771964895715.webp" loading="lazy" alt="Volcán Lanín">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Volcán Lanín/IMG_0382.webp" loading="lazy" alt="Volcán Lanín view">
+                        </div>
+                    </div>
+
+                    <h3>Cerro San Gabriel (3150 msnm)</h3>
+                    <div class="masonry-gallery">
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro San Gabriel 3150 msnm/1771964895830.webp" loading="lazy"
+                                alt="Cerro San Gabriel">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro San Gabriel 3150 msnm/IMG_0665.webp" loading="lazy"
+                                alt="Cerro San Gabriel group">
+                        </div>
+                        <div class="masonry-item fade-in">
+                            <img src="images/Cerro San Gabriel 3150 msnm/IMG_2476.webp" loading="lazy"
+                                alt="Cerro San Gabriel summit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Bruno Pollarolo</p>
+                <p>&copy; 2026 Bruno Pollarolo</p>
                 <p><span data-en="Contact:" data-es="Contacto:">Contact:</span> <a
                         href="mailto:bruno.pollarolo@ug.uchile.cl">bruno.pollarolo@ug.uchile.cl</a></p>
             </div>
