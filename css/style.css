@@ -378,7 +378,7 @@ section:nth-child(even) {
 /* Gallery */
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
 }
@@ -398,8 +398,9 @@ section:nth-child(even) {
 }
 
 .gallery-item img {
+    cursor: pointer;
     width: 100%;
-    height: 300px;
+    height: 450px;
     object-fit: cover;
     transition: var(--transition);
     display: block;
@@ -435,6 +436,7 @@ section:nth-child(even) {
 }
 
 .masonry-item img {
+    cursor: pointer;
     height: 100%;
     min-width: 100%;
     width: auto;
@@ -589,6 +591,7 @@ section:nth-child(even) {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 3px 10px var(--shadow);
+    cursor: pointer;
 }
 
 .image-caption {
@@ -597,6 +600,52 @@ section:nth-child(even) {
     color: var(--text);
     text-align: center;
     font-style: italic;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    user-select: none;
+}
+
+.lightbox-close:hover {
+    color: var(--secondary);
 }
 
 /* Data Tables & SVG / Images adaptations */

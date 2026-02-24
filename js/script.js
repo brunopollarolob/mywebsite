@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-links');
-    
+
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
-    
+
     // Close mobile menu when clicking on a nav link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
@@ -15,25 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.remove('active');
         });
     });
-    
+
     // Theme Toggle
     const themeToggle = document.querySelector('.theme-toggle');
     const htmlElement = document.documentElement;
-    
+
     // Check for saved user preference, if any, on load
     const currentTheme = localStorage.getItem('theme');
-    
+
     if (currentTheme) {
         htmlElement.setAttribute('data-theme', currentTheme);
-        
+
         // Update the toggle icon
         updateToggleIcon(currentTheme);
     }
-    
+
     themeToggle.addEventListener('click', () => {
         // If the current theme is not dark, make it dark, otherwise make it light
         const currentTheme = htmlElement.getAttribute('data-theme');
-        
+
         if (currentTheme !== 'dark') {
             htmlElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateToggleIcon('light');
         }
     });
-    
+
     function updateToggleIcon(theme) {
         const toggleIcon = themeToggle.querySelector('i');
         if (theme === 'dark') {
@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Language Toggle
     const languageToggle = document.querySelector('.language-toggle');
     const langText = document.querySelector('.lang-text');
-    
+
     // Check for saved language preference
     let currentLang = localStorage.getItem('language') || 'en';
     htmlElement.setAttribute('lang', currentLang);
     updateLanguageText(currentLang);
     updateContent(currentLang);
-    
+
     languageToggle.addEventListener('click', () => {
         currentLang = currentLang === 'en' ? 'es' : 'en';
         htmlElement.setAttribute('lang', currentLang);
@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
         updateLanguageText(currentLang);
         updateContent(currentLang);
     });
-    
+
     function updateLanguageText(lang) {
         langText.textContent = lang === 'en' ? 'ES' : 'EN';
     }
-    
+
     function updateContent(lang) {
         // Update all elements with data-en and data-es attributes
         document.querySelectorAll('[data-en][data-es]').forEach(element => {
@@ -83,15 +83,15 @@ document.addEventListener('DOMContentLoaded', () => {
             element.innerHTML = text;
         });
     }
-    
+
     // Scroll Animation
     const fadeElements = document.querySelectorAll('.timeline-item, .education-item, .teaching-item, .outreach-item, .skill-category, .award-item, .fade-in');
-    
+
     const fadeInOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -100px 0px'
     };
-    
+
     const fadeInObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -100,25 +100,66 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, fadeInOptions);
-    
+
     fadeElements.forEach(element => {
         element.classList.add('fade-in');
         fadeInObserver.observe(element);
     });
-    
+
     // Header scroll effect
     const header = document.querySelector('.header');
     let lastScrollTop = 0;
-    
+
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         if (scrollTop > 100) {
             header.classList.add('header-scrolled');
         } else {
             header.classList.remove('header-scrolled');
         }
-        
+
         lastScrollTop = scrollTop;
     });
+
+    // Lightbox / Image Zoom
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+
+    // Select all images we want to be zoomable
+    const zoomableImages = document.querySelectorAll('.gallery-item img, .masonry-item img, .research-image');
+
+    zoomableImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+            // Disable scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close on 'x' button click
+    closeBtn.addEventListener('click', () => {
+        closeLightbox();
+    });
+
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+        if (e.target !== lightboxImg) {
+            closeLightbox();
+        }
+    });
+
+    // Close on Esc key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto'; // Re-enable scroll
+    }
 });
