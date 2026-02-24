@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <script src="js/translations.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -17,7 +19,8 @@
                 <ul class="nav-links">
                     <li><a href="#home" data-en="About" data-es="Sobre mí">About</a></li>
                     <li><a href="#charts" data-en="CHARTS Project" data-es="Proyecto CHARTS">CHARTS Project</a></li>
-                    <li><a href="#research" data-en="Research Journey" data-es="Trayectoria de investigación">Research Journey</a></li>
+                    <li><a href="#research" data-en="Research Journey" data-es="Trayectoria de investigación">Research
+                            Journey</a></li>
                     <li><a href="#gallery" data-en="Gallery" data-es="Galería">Gallery</a></li>
                 </ul>
                 <div class="language-toggle">
@@ -39,31 +42,39 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-image">
-            <img src="images/hero-bg.jpg" alt="Bruno Pollarolo Portrait">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="images/hero-bg.jpg" alt="Bruno Pollarolo Portrait">
+                </div>
+                <div class="hero-text">
+                    <h3 data-en="Bruno Pollarolo Buschmann" data-es="Bruno Pollarolo Buschmann">
+                        Bruno Pollarolo Buschmann
+                    </h3>
+                    <p class="description"
+                        data-en="I’m a senior undergraduate student at Universidad de Chile, working on instrumentation for radio astronomy. My research focuses on signal processing systems to detect transient phenomena, brief, high-energy events that emerge from extreme astrophysical environments."
+                        data-es="Estudiante de Ingeniería Eléctrica y Astronomía en la Universidad de Chile, dedicado al desarrollo de instrumentación para radioastronomía. Mi trabajo se centra en diseñar sistemas de procesamiento de señales para detectar fenómenos transitorios: eventos breves y muy energéticos que ocurren en los entornos más extremos del universo.">
+                        Estudiante de Ingeniería Eléctrica y Astronomía en la Universidad de Chile, dedicado al
+                        desarrollo de instrumentación para radioastronomía. Mi trabajo se centra en diseñar sistemas de
+                        procesamiento de señales para detectar fenómenos transitorios: eventos breves y muy energéticos
+                        que ocurren en los entornos más extremos del universo.
+                    </p>
+                    <p class="description"
+                        data-en="Currently completing my dual degree on Electrical Engineering and Astronomy, I’m developing the digital backend for CHARTS, a low-frequency radio interferometer designed to explore the southern sky for fast radio bursts and other transient signals."
+                        data-es="Actualmente finalizando mi doble titulación y tesis, desarrollo el backend digital de CHARTS, un interferómetro de baja frecuencia diseñado para explorar el cielo austral en busca de ráfagas rápidas de radio y otras señales transitorias.">
+                        Actualmente finalizando mi doble titulación y tesis, desarrollo el backend digital de CHARTS, un
+                        interferómetro de baja frecuencia diseñado para explorar el cielo austral en busca de ráfagas
+                        rápidas de radio y otras señales transitorias.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/brunopollarolob" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/bruno-pollarolo-3454a420a/" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://astronomy-laboratory.github.io/index.html" target="_blank"
+                            aria-label="AstroLab"><i class="fas fa-telescope"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="hero-text">
-            <h3 data-en="Bruno Pollarolo Buschmann" data-es="Bruno Pollarolo Buschmann">
-                Bruno Pollarolo Buschmann
-            </h3>
-            <p class="description" 
-                data-en="I’m a senior undergraduate student at Universidad de Chile, working on instrumentation for radio astronomy. My research focuses on signal processing systems to detect transient phenomena, brief, high-energy events that emerge from extreme astrophysical environments."
-                data-es="Estudiante de Ingeniería Eléctrica y Astronomía en la Universidad de Chile, dedicado al desarrollo de instrumentación para radioastronomía. Mi trabajo se centra en diseñar sistemas de procesamiento de señales para detectar fenómenos transitorios: eventos breves y muy energéticos que ocurren en los entornos más extremos del universo.">
-                Estudiante de Ingeniería Eléctrica y Astronomía en la Universidad de Chile, dedicado al desarrollo de instrumentación para radioastronomía. Mi trabajo se centra en diseñar sistemas de procesamiento de señales para detectar fenómenos transitorios: eventos breves y muy energéticos que ocurren en los entornos más extremos del universo.
-            </p>
-            <p class="description"
-                data-en="Currently completing my dual degree on Electrical Engineering and Astronomy, I’m developing the digital backend for CHARTS, a low-frequency radio interferometer designed to explore the southern sky for fast radio bursts and other transient signals."
-                data-es="Actualmente finalizando mi doble titulación y tesis, desarrollo el backend digital de CHARTS, un interferómetro de baja frecuencia diseñado para explorar el cielo austral en busca de ráfagas rápidas de radio y otras señales transitorias.">
-                Actualmente finalizando mi doble titulación y tesis, desarrollo el backend digital de CHARTS, un interferómetro de baja frecuencia diseñado para explorar el cielo austral en busca de ráfagas rápidas de radio y otras señales transitorias.
-            </p>
-            <div class="social-links">
-                <a href="https://github.com/brunopollarolob" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/bruno-pollarolo-3454a420a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://astronomy-laboratory.github.io/index.html" target="_blank" aria-label="AstroLab"><i class="fas fa-telescope"></i></a>
-            </div>
-            </div>
-        </div>
         </section>
 
 
@@ -71,73 +82,471 @@
         <section id="charts" class="charts-section">
             <div class="container">
                 <h2 data-en="CHARTS" data-es="CHARTS">CHARTS: Listening to the Southern Sky</h2>
-                
+
                 <div class="blog-content">
-                    <h3 data-en="Time-Domain Radio Astronomy" data-es="Radioastronomía en el dominio del tiempo">Time-Domain Radio Astronomy</h3>
-                    <p data-en="Over the past decade, radio astronomy has shifted focus from static observations to time-variable phenomena. This approach has revealed a diverse range of energetic events: pulsars, magnetar bursts, and <i>fast radio bursts</i> (FRBs), millisecond-duration flashes detectable from cosmological distances." data-es="En la última década, la radioastronomía ha pasado de observaciones estáticas a un enfoque centrado en fenómenos que varían en el tiempo. Esta perspectiva ha permitido descubrir una gran diversidad de eventos energéticos: púlsares, estallidos de magnetares y <i>fast radio bursts</i> (FRBs), destellos de milisegundos detectables a distancias cosmológicas.">
-                        Over the past decade, radio astronomy has shifted focus from static observations to time-variable phenomena. This approach has revealed a diverse range of energetic events: pulsars, magnetar bursts, and <i>fast radio bursts</i> (FRBs), millisecond-duration flashes detectable from cosmological distances.
-                    </p>
-                    <p data-en="FRBs, discovered in 2007, remain poorly understood. These signals originate from distant galaxies and release energies comparable to days of solar output in just milliseconds. They provide unique probes of extreme physics: matter in intense magnetic fields, relativistic plasma dynamics, and particle acceleration processes difficult to study elsewhere." data-es="Los FRBs, descubiertos en 2007, siguen siendo un enigma. Estas señales provienen de galaxias lejanas y liberan, en apenas milisegundos, energía equivalente a la que el Sol emite en varios días. Ofrecen una ventana única para estudiar física extrema: materia en campos magnéticos intensos, dinámica de plasmas relativistas y procesos de aceleración de partículas difíciles de observar en otros entornos.">
-                        FRBs, discovered in 2007, remain poorly understood. These signals originate from distant galaxies and release energies comparable to days of solar output in just milliseconds. They provide unique probes of extreme physics: matter in intense magnetic fields, relativistic plasma dynamics, and particle acceleration processes difficult to study elsewhere.
-                    </p>
-
-                    <h3 data-en="Coverage Gap in the Southern Hemisphere" data-es="Brecha de cobertura en el hemisferio sur">Coverage Gap in the Southern Hemisphere</h3>
-                    <p data-en="Most FRB surveys operate in the Northern Hemisphere, leaving southern declinations underexplored. This includes the Galactic Center region, where magnetar populations are concentrated. South America, specifically, has reported no FRB detections to date—primarily due to limited observational infrastructure." data-es="La mayoría de las búsquedas de FRBs se realizan en el hemisferio norte, por lo que gran parte del cielo austral permanece poco explorado. Entre esas regiones está el Centro Galáctico, con alta densidad de magnetares. En Sudamérica no se han reportado hasta ahora detecciones de FRBs, en gran medida por la limitada infraestructura observacional.">
-                        Most FRB surveys operate in the Northern Hemisphere, leaving southern declinations underexplored. This includes the Galactic Center region, where magnetar populations are concentrated. South America, specifically, has reported no FRB detections to date—primarily due to limited observational infrastructure.
-                    </p>
-
-                    <h3 data-en="Enter CHARTS" data-es="Presentamos CHARTS">The CHARTS Array</h3>
-                    <p data-en="The Canadian-Chilean Array for Radio Transient Studies (CHARTS) addresses this gap. It's a collaboration between Universidad de Chile, the University of Toronto's Dunlap Institute, and the Millimeter Wave Laboratory to deploy a low-frequency interferometer optimized for transient searches in the southern sky." data-es="El Canadian-Chilean Array for Radio Transient Studies (CHARTS) busca reducir esta brecha. Es una colaboración entre la Universidad de Chile, el Dunlap Institute de la University of Toronto y el Millimeter Wave Laboratory, orientada a desplegar un interferómetro de baja frecuencia optimizado para búsquedas de transitorios en el cielo austral.">
-                        The Canadian-Chilean Array for Radio Transient Studies (CHARTS) addresses this gap. It's a collaboration between Universidad de Chile, the University of Toronto's Dunlap Institute, and the Millimeter Wave Laboratory to deploy a low-frequency interferometer optimized for transient searches in the southern sky.
-                    </p>
-                    <p data-en="CHARTS operates at 300–500 MHz, a frequency range where FRBs show enhanced brightness and which remains relatively undersampled by existing facilities. The array consists of 256 dipole antennas providing a large collecting area, designed to detect low-dispersion-measure FRBs that facilitate nearby host galaxy localization. Expected detection rate: approximately 100 FRBs per year at full operation." data-es="CHARTS opera entre 300 y 500 MHz, un rango donde los FRBs suelen ser más brillantes y que ha sido poco muestreado por instalaciones actuales. El arreglo está formado por 256 antenas dipolo que proveen una gran área de recolección, pensado para detectar FRBs de baja medida de dispersión y facilitar la localización de galaxias anfitrionas cercanas. Se estima una tasa de detección de ~100 FRBs por año en operación completa.">
-                        CHARTS operates at 300–500 MHz, a frequency range where FRBs show enhanced brightness and which remains relatively undersampled by existing facilities. The array consists of 256 dipole antennas providing a large collecting area, designed to detect low-dispersion-measure FRBs that facilitate nearby host galaxy localization. Expected detection rate: approximately 100 FRBs per year at full operation.
+                    <p data-en="CHARTS is a compact, wide-field interferometer designed to explore the transient radio sky in the 300–500 MHz band. Its architecture prioritizes the number of elements and instantaneous field of view over raw bandwidth, aiming to maximize the detection rate of Fast Radio Bursts (FRBs) and other millisecond-duration transients."
+                        data-es="CHARTS es un interferómetro compacto de gran campo de visión diseñado para explorar el cielo de radio en la banda de 300–500 MHz. Su arquitectura prioriza el número de elementos y el campo de visión instantáneo por sobre el ancho de banda bruto, con el objetivo de maximizar la tasa de detección de Ráfagas Rápidas de Radio (FRBs) y otros transitorios de duración de milisegundos.">
+                        CHARTS is a compact, wide-field interferometer designed to explore the transient radio sky in
+                        the 300–500 MHz band. Its architecture prioritizes the number of elements and instantaneous
+                        field of view over raw bandwidth, aiming to maximize the detection rate of Fast Radio Bursts
+                        (FRBs) and other millisecond-duration transients.
                     </p>
 
                     <div style="text-align: center; margin: 2rem 0;">
-                        <img src="images/charts_antenna.webp" alt="CHARTS Dipole Antenna" class="fade-in" style="max-width: 600px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
-                        <p class="image-caption" data-en="CHARTS dipole antenna prototype—256 of these will form the array, working together to capture radio signals from transient cosmic events" data-es="Prototipo de antena dipolo de CHARTS—256 de estas formarán el arreglo y trabajarán en conjunto para captar señales de eventos cósmicos transitorios.">CHARTS dipole antenna prototype—256 of these will form the array, working together to capture radio signals from transient cosmic events</p>
+                        <iframe width="100%" height="500"
+                            style="max-width: 900px; border: none; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);"
+                            src="plot/instantaneous_fov.html" frameborder="0"></iframe>
+                        <p class="image-caption"
+                            data-en="CHARTS instantaneous field-of-view (blue region) showing extended coverage of the Galactic Center and southern sky."
+                            data-es="Campo de visión instantáneo de CHARTS (región azul) mostrando la cobertura del Centro Galáctico y del cielo austral.">
+                            CHARTS instantaneous field-of-view (blue region) showing extended coverage of the Galactic
+                            Center and southern sky.</p>
                     </div>
 
-                    <h3 data-en="Site Location" data-es="Ubicación del sitio">Site Location</h3>
-                    <p data-en="CHARTS will be deployed at <a href='https://www.openstreetmap.org/?mlat=-33.4211&mlon=-70.8638#map=14/-33.4211/-70.8638&layers=N' target='_blank' style='color: var(--primary);'>Laguna Carén</a>, a protected park in Chile's Metropolitan Region near Santiago. The site provides low radio frequency interference and good access to southern declinations, including over 5 hours of daily Galactic Center visibility." data-es="CHARTS se desplegará en <a href='https://www.openstreetmap.org/?mlat=-33.4211&mlon=-70.8638#map=14/-33.4211/-70.8638&layers=N' target='_blank' style='color: var(--primary);'>Laguna Carén</a>, un parque protegido en la Región Metropolitana, cercano a Santiago. El lugar presenta baja interferencia a bajas frecuencias y buen acceso a declinaciones australes, incluyendo más de 5 horas diarias de visibilidad del Centro Galáctico.">
-                        CHARTS will be deployed at <a href="https://www.openstreetmap.org/?mlat=-33.4211&mlon=-70.8638#map=14/-33.4211/-70.8638&layers=N" target="_blank" style="color: var(--primary);">Laguna Carén</a>, a protected park in Chile's Metropolitan Region near Santiago. The site provides low radio frequency interference and good access to southern declinations, including over 5 hours of daily Galactic Center visibility.
+                    <h3 data-en="System Architecture & Specifications"
+                        data-es="Arquitectura del Sistema y Especificaciones">System Architecture & Specifications</h3>
+                    <p data-en="The system consists of 256 dual-polarized antennas (with one polarization currently implemented). It features a modular analog chain utilizing ultra-low noise amplifiers (ULNAs) and frequency division multiplexing (FDM) to reduce the number of physical analog-to-digital converters (ADCs). RFSoC nodes perform digitization, Polyphase Filter Bank (PFB) channelization, and Fast Fourier Transform (FFT) in real-time. Downstream correlation and beamforming are handled by GPU nodes running transient search pipelines with dispersion measure (DM) dedispersion and real-time classification."
+                        data-es="El sistema consta de 256 antenas de polarización dual (una polarización implementada actualmente). Cuenta con una cadena analógica modular que utiliza amplificadores de muy bajo ruido (ULNAs) y multiplexación por división de frecuencias (FDM) para reducir los convertidores analógico-digital (ADC) físicos. Nodos RFSoC realizan digitalización, canalización PFB y FFT en tiempo real. La posterior correlación y beamforming se realizan en nodos GPU ejecutando pipelines de búsqueda transitoria con dedispersión (DM) y clasificación en tiempo real.">
+                        The system consists of 256 dual-polarized antennas (with one polarization currently
+                        implemented). It features a modular analog chain utilizing ultra-low noise amplifiers (ULNAs)
+                        and frequency division multiplexing (FDM) to reduce the number of physical analog-to-digital
+                        converters (ADCs). RFSoC nodes perform digitization, Polyphase Filter Bank (PFB) channelization,
+                        and Fast Fourier Transform (FFT) in real-time. Downstream correlation and beamforming are
+                        handled by GPU nodes running transient search pipelines with dispersion measure (DM)
+                        dedispersion and real-time classification.
+                    </p>
+
+                    <div style="text-align: center; margin: 2rem 0; width: 100%;" class="fade-in">
+                        <div style="overflow-x: auto; padding: 1rem;">
+                            <table
+                                style="width: 100%; max-width: 700px; margin: 0 auto; border-collapse: collapse; text-align: left; font-family: var(--font-main); background-color: white; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                                <thead>
+                                    <tr style="border-top: 2px solid black; border-bottom: 1px solid black;">
+                                        <th style="padding: 12px; font-weight: bold;">Parameter</th>
+                                        <th style="padding: 12px; font-weight: bold;">Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 10px;">Passband</td>
+                                        <td style="padding: 10px;">ν = 300–501.6 MHz</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Bandwidth</td>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Δν = 201.6 MHz</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">Channel width</td>
+                                        <td style="padding: 10px;">Δν<sub>ch</sub> = 300 kHz</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Number of channels</td>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">N<sub>ν</sub> = 672</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">Number of antennas</td>
+                                        <td style="padding: 10px;">N<sub>a</sub> = 256</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Number of beams</td>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">N<sub>b</sub> = 1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">Sample time (real-time search)</td>
+                                        <td style="padding: 10px;">t<sub>rs</sub> ≲ 1 ms</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Sample time (baseband
+                                            dump)</td>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">t<sub>s</sub> = 3.33 µs
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">Antenna beam</td>
+                                        <td style="padding: 10px;">HPBW<sub>a</sub> ≈ 100°</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Antenna gain</td>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">G<sub>a</sub> ≈ 7 dBi</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">Polarizations</td>
+                                        <td style="padding: 10px;">n<sub>p</sub> = 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Field of View</td>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Ω<sub>a</sub> ≈
+                                            8×10<sup>3</sup> deg²</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">System temperature</td>
+                                        <td style="padding: 10px;">T<sub>sys</sub> ≤ 100 K</td>
+                                    </tr>
+                                    <tr style="border-bottom: 2px solid black;">
+                                        <td style="padding: 10px; background-color: #f9f9f9;">Maximum DM</td>
+                                        <td style="padding: 10px; background-color: #f9f9f9;">DM < 1000 pc cm<sup>
+                                                -3</sup></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="image-caption" style="text-align: justify; margin-top: 1.5rem;"
+                            data-en="Table 3.1: CHARTS parameters and specifications."
+                            data-es="Tabla 3.1: Parámetros y especificaciones de CHARTS.">Table 3.1: CHARTS parameters
+                            and specifications.</p>
+                    </div>
+
+                    <h3 data-en="Site Location & Array Status" data-es="Ubicación del Sitio y Estado del Arreglo">Site
+                        Location & Array Status</h3>
+                    <p data-en="The chosen site is Laguna Carén, a protected park in Chile's Metropolitan Region near Santiago, which offers relatively favorable RFI conditions and will be accommodated for continuous remote operation."
+                        data-es="El sitio elegido es Laguna Carén, un parque protegido en la Región Metropolitana, cercano a Santiago, el cual ofrece condiciones favorables respecto a interferencias de radiofrecuencia (RFI) y será acondicionado para operaciones remotas continuas.">
+                        The chosen site is Laguna Carén, a protected park in Chile's Metropolitan Region near Santiago,
+                        which offers relatively favorable RFI conditions and will be accommodated for continuous remote
+                        operation.
                     </p>
 
                     <div style="text-align: center; margin: 2rem 0;">
-                        <iframe width="100%" height="400" style="max-width: 800px; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);" src="https://www.openstreetmap.org/export/embed.html?bbox=-70.90292930603029%2C-33.45292756353726%2C-70.82465171813966%2C-33.389169567557765&layer=mapnik&marker=-33.421054418010364%2C-70.86379051208496" frameborder="0"></iframe>
-                        <p class="image-caption" data-en="CHARTS site location at Laguna Carén, Chile" data-es="Ubicación del sitio CHARTS en Laguna Carén, Chile">CHARTS site location at Laguna Carén, Chile</p>
+                        <iframe width="100%" height="400"
+                            style="max-width: 800px; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-70.90292930603029%2C-33.45292756353726%2C-70.82465171813966%2C-33.389169567557765&layer=mapnik&marker=-33.421054418010364%2C-70.86379051208496"
+                            frameborder="0"></iframe>
                     </div>
 
-                    <h3 data-en="Sky Coverage" data-es="Cobertura del cielo">Sky Coverage</h3>
-                    <p data-en="CHARTS targets southern hemisphere sources below zero degrees declination, providing extended coverage of the Galactic Center where magnetar populations are dense and potential local radio bursts may originate. The instantaneous field-of-view shown below represents the sky area monitored at any given time." data-es="CHARTS apunta a fuentes del hemisferio sur (declinaciones negativas), ofreciendo cobertura ampliada del Centro Galáctico, donde las poblaciones de magnetares son densas y podrían originarse estallidos locales. El campo de visión instantáneo que se muestra a continuación corresponde al área del cielo monitoreada en un momento dado.">
-                        CHARTS targets southern hemisphere sources below zero degrees declination, providing extended coverage of the Galactic Center where magnetar populations are dense and potential local radio bursts may originate. The instantaneous field-of-view shown below represents the sky area monitored at any given time.
+                    <p data-en="Currently, the CHARTS project is in the first stages of commissioning at the Laguna Carén site. An initial 24-antenna subarray is operational, with ongoing tests to validate the complete analog and digital chain. Full deployment of the 256-antenna array is planned for late 2026."
+                        data-es="Actualmente, el proyecto CHARTS se encuentra en las primeras etapas de puesta en marcha en el sitio de Laguna Carén. Un subarreglo inicial de 24 antenas está operativo, con pruebas en curso para validar la cadena analógica y digital completa. El despliegue total del arreglo de 256 antenas está planificado para fines de 2026.">
+                        Currently, the CHARTS project is in the first stages of commissioning at the Laguna Carén site.
+                        An initial 24-antenna subarray is operational, with ongoing tests to validate the complete
+                        analog and digital chain. Full deployment of the 256-antenna array is planned for late 2026.
                     </p>
 
                     <div style="text-align: center; margin: 2rem 0;">
-                        <iframe width="100%" height="500" style="max-width: 900px; border: none; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);" src="plot/instantaneous_fov.html" frameborder="0"></iframe>
-                        <p class="image-caption" data-en="CHARTS instantaneous field-of-view (blue region) from the Santiago area, showing coverage of the Galactic Center and southern sky (Credits to Dr. Tomás Cassanelli for the plot)" data-es="Campo de visión instantáneo de CHARTS (región azul) desde el área de Santiago, mostrando la cobertura del Centro Galáctico y del cielo austral (créditos: Dr. Tomás Cassanelli).">CHARTS instantaneous field-of-view (blue region) from the Santiago area, showing coverage of the Galactic Center and southern sky (Credits to Dr. Tomás Cassanelli for the plot)</p>
+                        <img src="images/charts-24.jpg" alt="CHARTS 24-antenna subarray" class="fade-in"
+                            style="max-width: 800px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                        <p class="image-caption"
+                            data-en="CHARTS 24-antenna subarray at Laguna Carén site during initial commissioning phase."
+                            data-es="Subarreglo de 24 antenas de CHARTS en Laguna Carén durante la fase inicial de puesta en marcha.">
+                            CHARTS 24-antenna subarray at Laguna Carén site during initial commissioning phase.</p>
                     </div>
 
-                    
                     <div class="thesis-highlight">
                         <div class="thesis-content">
-                            <h3 data-en="The F-Engine Development" data-es="Desarrollo del F-engine">The F-Engine Development</h3>
-                            <p data-en="Within CHARTS' signal processing architecture, the F-engine (channelization engine) performs the initial digitization and frequency channelization of antenna signals, producing data for downstream correlation and transient detection pipelines." data-es="Dentro de la arquitectura de CHARTS, el F-engine realiza la digitalización inicial y la canalización en frecuencia de las señales de antena, generando los datos que alimentan las etapas de correlación y las pipelines de detección de transitorios.">
-                                Within CHARTS' signal processing architecture, the F-engine (channelization engine) performs the initial digitization and frequency channelization of antenna signals, producing data for downstream correlation and transient detection pipelines.
+                            <h3 data-en="My Contribution: F-Engine & Digital Backend"
+                                data-es="Mi Contribución: F-Engine y Backend Digital">My Contribution: F-Engine &
+                                Digital Backend</h3>
+                            <p data-en="The development of CHARTS has been a highly collaborative interdisciplinary effort. Analog components were primarily developed by Dr. Albert Wai Kit Lau and MSc Sebastián Manosalva, while the software for the searching nodes is being developed collaboratively by MSc Gonzalo Burgos and MSc student Juan Pablo Contreras."
+                                data-es="El desarrollo de CHARTS ha sido un esfuerzo interdisciplinario colaborativo. Los componentes analógicos fueron desarrollados en gran parte por el Dr. Albert Wai Kit Lau y el MSc Sebastián Manosalva, mientras el software para los nodos de búsqueda es desarrollado por el MSc Gonzalo Burgos y el estudiante Juan Pablo Contreras.">
+                                The development of CHARTS has been a highly collaborative interdisciplinary effort.
+                                Analog components were primarily developed by Dr. Albert Wai Kit Lau and MSc Sebastián
+                                Manosalva, while the software for the searching nodes is being developed collaboratively
+                                by MSc Gonzalo Burgos and MSc student Juan Pablo Contreras.
                             </p>
-                            <p data-en="My thesis work addresses this component: developing a spectrometer system using demultiplexing techniques to process multiple antennas per digitizer. The approach allows a single analog-to-digital converter to handle several antenna inputs simultaneously, enabling wide-bandwidth digitization across the 256-element array without requiring individual digitizers for each antenna." data-es="Mi tesis aborda este componente: desarrollar un sistema de espectrómetro que usa técnicas de demultiplexación para procesar múltiples antenas por digitalizador. Esto permite que un único convertidor analógico-digital maneje varias entradas simultáneamente, posibilitando la digitalización de gran ancho de banda en el arreglo de 256 elementos sin necesidad de un digitalizador por antena.">
-                                My thesis work addresses this component: developing a spectrometer system using demultiplexing techniques to process multiple antennas per digitizer. The approach allows a single analog-to-digital converter to handle several antenna inputs simultaneously, enabling wide-bandwidth digitization across the 256-element array without requiring individual digitizers for each antenna.
+                            <p data-en="My work leads the digital development of the system. This includes extensive RFSoC measurements, RFI characterizations, and specifically the design of the F-Engine: the channelization engine responsible for digitizing and frequency-channelizing the massive incoming data stream."
+                                data-es="Mi trabajo lidera el desarrollo digital del sistema. Esto incluye extensas mediciones en tarjetas RFSoC, caracterizaciones del ambiente de RFI de la zona, y específicamente el diseño del F-Engine, el motor de canalización responsable de digitalizar las señales entrantes.">
+                                My work leads the digital development of the system. This includes extensive RFSoC
+                                measurements, RFI characterizations, and specifically the design of the F-Engine: the
+                                channelization engine responsible for digitizing and frequency-channelizing the massive
+                                incoming data stream.
                             </p>
-                            <p data-en="The challenge involves balancing data throughput, bandwidth requirements, and system scalability while maintaining the real-time processing necessary for transient detection in the southern sky." data-es="El desafío consiste en balancear el flujo de datos, los requisitos de ancho de banda y la escalabilidad del sistema, manteniendo al mismo tiempo el procesamiento en tiempo real necesario para la detección de transitorios en el cielo austral.">
-                                The challenge involves balancing data throughput, bandwidth requirements, and system scalability while maintaining the real-time processing necessary for transient detection in the southern sky.
+                            <p data-en="Developing the digital spectrometer system requires implementing demultiplexing techniques to process multiple antennas per ADC. The architecture, employing a single RFSoC ADC to handle numerous inputs across adjacent frequency chains multiplexed by an FDM board, is outlined in the diagram below, using the maximum effective bandwidth of the RFSoC 4x2 of ~2.5 GHz. The specific chains frequency layout is shown in Table 3.2."
+                                data-es="El desarrollo de este sistema requiere la implementación de técnicas de demultiplexación para procesar varias antenas por digitalizador de forma recurrente. La arquitectura, que emplea un único ADC de RFSoC para manejar múltiples entradas a través de cadenas de frecuencia adyacentes multiplexadas por una placa FDM, se describe en el diagrama a continuación, utilizando el ancho de banda efectivo máximo del RFSoC 4x2 de ~2.5 GHz. El diseño específico de las cadenas de frecuencia se muestra en la Tabla 3.2.">
+                                Developing the digital spectrometer system requires implementing demultiplexing
+                                techniques to process multiple antennas per ADC. The architecture, employing a single
+                                RFSoC ADC to handle numerous inputs across adjacent frequency chains multiplexed by an
+                                FDM board, is outlined in the diagram below, using the maximum effective bandwidth of
+                                the RFSoC 4x2 of ~2.5 GHz. The specific chain frequency layout is shown in Table 3.2.
                             </p>
                         </div>
-                        <div class="thesis-image" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
-                            <img src="images/rfsoc.webp" alt="RFSoC 4x2 Board" class="research-image fade-in" style="max-width:100%;height:auto;display:block;">
-                            <p class="image-caption" style="text-align:center;" data-en="Xilinx AMD RFSoC 4x2 board used for CHARTS F-engine development" data-es="Placa Xilinx AMD RFSoC 4x2 empleada en el desarrollo del F-engine de CHARTS">Xilinx AMD RFSoC 4x2 board used for CHARTS F-engine development</p>
+                        <div class="thesis-image"
+                            style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                            <img src="images/rfsoc.webp" alt="RFSoC 4x2 Board" class="research-image fade-in"
+                                style="max-width:100%;height:auto;display:block;">
+                            <p class="image-caption" style="text-align:center;"
+                                data-en="RFSoC node board utilized for the F-Engine processing block."
+                                data-es="Nodo de procesamiento basado en RFSoC para la implementación del bloque de F-Engine.">
+                                RFSoC node board utilized for the F-Engine processing block.</p>
                         </div>
                     </div>
+
+                    <div style="text-align: center; margin: 4rem 0; width: 100%;" class="fade-in">
+                        <div
+                            style="background-color: white; padding: 2rem 1rem; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow); overflow-x: auto;">
+                            <!-- Figure 3.7 FDM Block Diagram SVG -->
+                            <svg viewBox="0 0 800 400" width="100%"
+                                style="min-width: 600px; max-width: 800px; font-family: var(--font-main);">
+                                <style>
+                                    .line {
+                                        stroke: black;
+                                        stroke-width: 1.5;
+                                        fill: none;
+                                    }
+
+                                    .signal {
+                                        stroke: blue;
+                                        stroke-width: 1.5;
+                                        fill: none;
+                                        stroke-linejoin: round;
+                                    }
+
+                                    .label {
+                                        font-size: 14px;
+                                        fill: black;
+                                    }
+
+                                    .math {
+                                        font-style: italic;
+                                        font-family: var(--font-main);
+                                        font-size: 16px;
+                                        fill: black;
+                                    }
+
+                                    .sub {
+                                        font-size: 10px;
+                                        font-style: normal;
+                                    }
+
+                                    .gray {
+                                        fill: #666;
+                                        font-family: var(--font-main);
+                                        font-size: 13px;
+                                    }
+
+                                    .dashed {
+                                        stroke: black;
+                                        stroke-width: 1.5;
+                                        fill: none;
+                                        stroke-dasharray: 4, 4;
+                                    }
+                                </style>
+
+                                <!-- Top Left Plot -->
+                                <path class="line" d="M 150,70 L 150,30" />
+                                <path class="line" d="M 150,70 L 280,70" />
+                                <polygon points="275,65 280,70 275,75" fill="black" />
+                                <text x="285" y="74" class="math">ν</text>
+                                <path class="signal" d="M 175,70 L 185,35 L 225,35 L 235,70" />
+                                <text x="240" y="55" class="label">×8</text>
+
+                                <!-- Arrow to Top Right Plot -->
+                                <path class="line" d="M 310,50 L 400,50" />
+                                <polygon points="395,45 400,50 395,55" fill="black" />
+
+                                <!-- Top Right Plot -->
+                                <path class="line" d="M 430,70 L 430,30" />
+                                <path class="line" d="M 430,70 L 710,70" />
+                                <polygon points="705,65 710,70 705,75" fill="black" />
+                                <text x="715" y="74" class="math">ν</text>
+
+                                <!-- 8 contiguous bands -->
+                                <path class="signal" d="M 450,70 L 454,35 L 472,35 L 476,70 
+                                                         L 478,70 L 482,35 L 500,35 L 504,70 
+                                                         L 506,70 L 510,35 L 528,35 L 532,70 
+                                                         L 534,70 L 538,35 L 556,35 L 560,70 
+                                                         L 562,70 L 566,35 L 584,35 L 588,70 
+                                                         L 590,70 L 594,35 L 612,35 L 616,70 
+                                                         L 618,70 L 622,35 L 640,35 L 644,70 
+                                                         L 646,70 L 650,35 L 668,35 L 672,70" />
+
+                                <g id="antennas">
+                                    <!-- A-000 -->
+                                    <text x="65" y="129" class="label" text-anchor="end">A-000</text>
+                                    <path class="line" d="M 75,115 L 75,135 L 90,125 Z" />
+                                    <path class="line" d="M 90,125 L 280,125" />
+                                    <polygon points="115,122 120,125 115,128" fill="black" />
+
+                                    <!-- A-001 -->
+                                    <text x="65" y="149" class="label" text-anchor="end">A-001</text>
+                                    <path class="line" d="M 75,135 L 75,155 L 90,145 Z" />
+                                    <path class="line" d="M 90,145 L 280,145" />
+                                    <polygon points="115,142 120,145 115,148" fill="black" />
+
+                                    <!-- A-002 -->
+                                    <text x="65" y="169" class="label" text-anchor="end">A-002</text>
+                                    <path class="line" d="M 75,155 L 75,175 L 90,165 Z" />
+                                    <path class="line" d="M 90,165 L 280,165" />
+                                    <polygon points="115,162 120,165 115,168" fill="black" />
+
+                                    <!-- A-003 -->
+                                    <text x="65" y="189" class="label" text-anchor="end">A-003</text>
+                                    <path class="line" d="M 75,175 L 75,195 L 90,185 Z" />
+                                    <path class="line" d="M 90,185 L 280,185" />
+                                    <polygon points="115,182 120,185 115,188" fill="black" />
+
+                                    <!-- A-004 -->
+                                    <text x="65" y="209" class="label" text-anchor="end">A-004</text>
+                                    <path class="line" d="M 75,195 L 75,215 L 90,205 Z" />
+                                    <path class="line" d="M 90,205 L 280,205" />
+                                    <polygon points="115,202 120,205 115,208" fill="black" />
+
+                                    <!-- A-005 -->
+                                    <text x="65" y="229" class="label" text-anchor="end">A-005</text>
+                                    <path class="line" d="M 75,215 L 75,235 L 90,225 Z" />
+                                    <path class="line" d="M 90,225 L 280,225" />
+                                    <polygon points="115,222 120,225 115,228" fill="black" />
+
+                                    <!-- A-006 -->
+                                    <text x="65" y="249" class="label" text-anchor="end">A-006</text>
+                                    <path class="line" d="M 75,235 L 75,255 L 90,245 Z" />
+                                    <path class="line" d="M 90,245 L 280,245" />
+                                    <polygon points="115,242 120,245 115,248" fill="black" />
+
+                                    <!-- A-007 -->
+                                    <text x="65" y="269" class="label" text-anchor="end">A-007</text>
+                                    <path class="line" d="M 75,255 L 75,275 L 90,265 Z" />
+                                    <path class="line" d="M 90,265 L 280,265" />
+                                    <polygon points="115,262 120,265 115,268" fill="black" />
+                                </g>
+
+                                <!-- Dots for Antennas -->
+                                <circle cx="65" cy="300" r="1.5" fill="black" />
+                                <circle cx="65" cy="315" r="1.5" fill="black" />
+                                <circle cx="65" cy="330" r="1.5" fill="black" />
+                                <text x="65" y="365" class="label" text-anchor="end">A-255</text>
+
+                                <!-- Frequency text under antennas -->
+                                <text x="130" y="115" class="gray">300 – 500 MHz</text>
+
+                                <!-- FDM-00 -->
+                                <polygon class="line" points="280,110 360,160 360,230 280,280" />
+                                <text x="320" y="200" class="label" text-anchor="middle">FDM-00</text>
+
+                                <!-- FDM-00 dots -->
+                                <circle cx="320" cy="300" r="1.5" fill="black" />
+                                <circle cx="320" cy="315" r="1.5" fill="black" />
+                                <circle cx="320" cy="330" r="1.5" fill="black" />
+                                <text x="320" y="365" class="label" text-anchor="middle">FDM-31</text>
+
+                                <!-- LO Inputs -->
+                                <text x="320" y="90" class="label" style="font-family: var(--font-main);"
+                                    text-anchor="middle">
+                                    <tspan class="math">ν</tspan>
+                                    <tspan dy="3" class="sub" style="font-weight: bold;">LO1</tspan>
+                                    <tspan dy="-3"> – </tspan>
+                                    <tspan class="math">ν</tspan>
+                                    <tspan dy="3" class="sub" style="font-weight: bold;">LO4</tspan>
+                                </text>
+                                <path class="line" d="M 296,95 L 296,120" />
+                                <polygon points="293,115 296,120 299,115" fill="gray" />
+                                <path class="line" d="M 312,95 L 312,130" />
+                                <polygon points="309,125 312,130 315,125" fill="gray" />
+                                <path class="line" d="M 328,95 L 328,140" />
+                                <polygon points="325,135 328,140 331,135" fill="gray" />
+                                <path class="line" d="M 344,95 L 344,150" />
+                                <polygon points="341,145 344,150 347,145" fill="gray" />
+
+                                <!-- RFSoC-0 -->
+                                <rect x="650" y="130" width="80" height="80" class="line" />
+                                <text x="690" y="175" class="label" text-anchor="middle"
+                                    style="font-family: var(--font-main);">RFSoC-0</text>
+
+                                <!-- Main output connection to RFSoC-0 -->
+                                <path class="line" d="M 360,195 L 490,195 L 490,140 L 650,140" />
+                                <text x="500" y="132" class="gray">300 – 2366.4 MHz</text>
+
+                                <!-- Bottom connections to RFSoC-0 -->
+                                <path class="line" d="M 650,160 L 520,160 L 520,240" />
+                                <path class="line dashed" d="M 520,240 L 520,280" />
+
+                                <path class="line" d="M 650,180 L 550,180 L 550,240" />
+                                <path class="line dashed" d="M 550,240 L 550,280" />
+
+                                <path class="line" d="M 650,200 L 580,200 L 580,240" />
+                                <path class="line dashed" d="M 580,240 L 580,280" />
+
+                                <!-- RFSoC-0 dots -->
+                                <circle cx="690" cy="300" r="1.5" fill="black" />
+                                <circle cx="690" cy="315" r="1.5" fill="black" />
+                                <circle cx="690" cy="330" r="1.5" fill="black" />
+                                <text x="690" y="365" class="label" text-anchor="middle">RFSoC-7</text>
+                            </svg>
+                        </div>
+                        <p class="image-caption" style="text-align: justify; margin-top: 1.5rem; line-height: 1.6;"
+                            data-en="Figure 3.7: FDM block diagram and frequency plan. Each FDM board combines signals from eight antennas (A-000 to A-007) into a single wideband output channel (300–2366.4 MHz) for digitization by one ADC of the RFSoC. Each RFSoC has four ADCs, therefore the number of FDM boards per RFSoC is also four (FDM-00 to FDM-03). With eight RFSoCs in total, the full CHARTS array employs 32 FDM boards (FDM-00 to FDM-31) to process all 256 antennas. The upconversion is performed using four independent LO tones (ν_LO1 to ν_LO4), each driving 4 mixers to create eight adjacent frequency chains. The resulting spectrum consists of eight contiguous chains, each 201.6 MHz wide, with guard bands of ~ 66 MHz between them to minimize interference."
+                            data-es="Figura 3.7: Diagrama de bloques de FDM y plan de frecuencias. Cada placa FDM combina señales de ocho antenas (A-000 a A-007) en un único canal de salida de banda ancha (300–2366.4 MHz) para su digitalización por un ADC del RFSoC. Cada RFSoC tiene cuatro ADCs, por lo tanto, el número de placas FDM por RFSoC también es cuatro (FDM-00 a FDM-03). Con un total de ocho RFSoCs, el arreglo completo de CHARTS emplea 32 placas FDM (FDM-00 a FDM-31) para procesar las 256 antenas. La elevación de frecuencia se realiza usando cuatro tonos LO independientes (ν_LO1 a ν_LO4), cada uno alimentando 4 mezcladores para crear ocho cadenas contiguas. El espectro resultante consta de ocho cadenas contiguas, cada una de 201.6 MHz de ancho, con bandas de guarda de ~ 66 MHz entre ellas para minimizar la interferencia.">
+                            Figure 3.7: FDM block diagram and frequency plan. Each FDM board combines signals from eight
+                            antennas (A-000 to A-007) into a single wideband output channel (300–2366.4 MHz) for
+                            digitization by one ADC of the RFSoC. Each RFSoC has four ADCs, therefore the number of FDM
+                            boards per RFSoC is also four (FDM-00 to FDM-03). With eight RFSoCs in total, the full
+                            CHARTS array employs 32 FDM boards (FDM-00 to FDM-31) to process all 256 antennas. The
+                            upconversion is performed using four independent LO tones (ν<sub
+                                style="font-size: smaller;">LO1</sub> to ν<sub style="font-size: smaller;">LO4</sub>),
+                            each driving 4 mixers to create eight adjacent frequency chains. The resulting spectrum
+                            consists of eight contiguous chains, each 201.6 MHz wide, with guard bands of ~ 66 MHz
+                            between them to minimize interference.
+                        </p>
+                    </div>
+
+                    <div style="text-align: center; margin: 4rem 0; width: 100%;" class="fade-in">
+                        <div style="overflow-x: auto; padding: 1rem;">
+                            <table
+                                style="width: 100%; max-width: 650px; margin: 0 auto; border-collapse: collapse; text-align: center; font-family: var(--font-main); background-color: white; border-radius: 8px; box-shadow: 0 5px 15px var(--shadow);">
+                                <thead>
+                                    <tr style="border-top: 2px solid black; border-bottom: 1px solid black;">
+                                        <th style="padding: 12px; font-weight: bold;">Chain Δν<sub>i</sub></th>
+                                        <th style="padding: 12px; font-weight: bold;">Frequency range</th>
+                                        <th style="padding: 12px; font-weight: bold;">LO tone</th>
+                                        <th style="padding: 12px; font-weight: bold;">Band</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 10px;">0</td>
+                                        <td style="padding: 10px;">300–501.6 MHz</td>
+                                        <td style="padding: 10px;">/</td>
+                                        <td style="padding: 10px;">USB</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">1</td>
+                                        <td style="padding: 10px;">564–765.6 MHz</td>
+                                        <td style="padding: 10px;">1065.6 MHz</td>
+                                        <td style="padding: 10px;">LSB</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">2</td>
+                                        <td style="padding: 10px;">830.4–1032 MHz</td>
+                                        <td style="padding: 10px;">1332.0 MHz</td>
+                                        <td style="padding: 10px;">LSB</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">3</td>
+                                        <td style="padding: 10px;">1099.2–1300.8 MHz</td>
+                                        <td style="padding: 10px;">1600.8 MHz</td>
+                                        <td style="padding: 10px;">LSB</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">4</td>
+                                        <td style="padding: 10px;">1365.6–1567.2 MHz</td>
+                                        <td style="padding: 10px;">1065.6 MHz</td>
+                                        <td style="padding: 10px;">USB</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">5</td>
+                                        <td style="padding: 10px;">1632–1833.6 MHz</td>
+                                        <td style="padding: 10px;">1332.0 MHz</td>
+                                        <td style="padding: 10px;">USB</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;">6</td>
+                                        <td style="padding: 10px;">1900.8–2102.4 MHz</td>
+                                        <td style="padding: 10px;">1600.8 MHz</td>
+                                        <td style="padding: 10px;">USB</td>
+                                    </tr>
+                                    <tr style="border-bottom: 2px solid black;">
+                                        <td style="padding: 10px;">7</td>
+                                        <td style="padding: 10px;">2164.8–2366.4 MHz</td>
+                                        <td style="padding: 10px;">1864.8 MHz</td>
+                                        <td style="padding: 10px;">USB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="image-caption" style="text-align: justify; margin-top: 1.5rem; line-height: 1.6;"
+                            data-en="Table 3.2: FDM chains and corresponding LO tones. Also shown is whether the band is upper sideband (USB) or lower sideband (LSB) with respect to the LO frequency."
+                            data-es="Tabla 3.2: Cadenas FDM y tonos LO correspondientes. También se muestra si la banda es de banda lateral superior (USB) o de banda lateral inferior (LSB) con respecto a la frecuencia del LO.">
+                            Table 3.2: FDM chains and corresponding LO tones. Also shown is whether the band is
+                            upper sideband (USB) or lower sideband (LSB) with respect to the LO frequency.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -145,61 +554,112 @@
         <!-- Research & Internships Section -->
         <section id="research" class="research">
             <div class="container">
-                <h2 data-en="Research & Work Experience" data-es="Investigación y experiencia laboral">Research & Work Experience</h2>
+                <h2 data-en="Research & Work Experience" data-es="Investigación y experiencia laboral">Research & Work
+                    Experience</h2>
 
                 <div class="blog-content">
-                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;" data-en="Professional and research background in FPGA design, signal generation, and end-to-end testing for radio transient studies." data-es="Formación profesional y experiencia de investigación en diseño de FPGA, generación de señales y pruebas end-to-end para estudios de transitorios de radio.">
-                        Professional and research background in FPGA design, signal generation, and end-to-end testing for radio transient studies.
+                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;"
+                        data-en="Professional and research background in FPGA design, signal generation, and end-to-end testing for radio transient studies."
+                        data-es="Formación profesional y experiencia de investigación en diseño de FPGA, generación de señales y pruebas end-to-end para estudios de transitorios de radio.">
+                        Professional and research background in FPGA design, signal generation, and end-to-end testing
+                        for radio transient studies.
                     </p>
                 </div>
 
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3 data-en="Intern, MWL — Universidad de Chile" data-es="Pasantía, MWL — Universidad de Chile">Intern, MWL — Universidad de Chile</h3>
-                            <p class="timeline-date" data-en="Dec 2023 – Feb 2024" data-es="Dic 2023 – Feb 2024">Dec 2023 – Feb 2024</p>
+                            <h3 data-en="Intern, MWL — Universidad de Chile"
+                                data-es="Pasantía, MWL — Universidad de Chile">Intern, MWL — Universidad de Chile</h3>
+                            <p class="timeline-date" data-en="Dec 2023 – Feb 2024" data-es="Dic 2023 – Feb 2024">Dec
+                                2023 – Feb 2024</p>
                             <ul>
-                                <li data-en="Designed and implemented a PYNQ overlay in Vivado to generate arbitrary waveform signals (up to 64 MB)." data-es="Diseñé e implementé un overlay PYNQ en Vivado para generar señales de forma de onda arbitraria (hasta 64 MB).">Designed and implemented a PYNQ overlay in Vivado to generate arbitrary waveform signals (up to 64 MB).</li>
-                                <li data-en="Programmed and transmitted waveforms via the DAC on the <a href='https://www.realdigital.org/hardware/rfsoc-4x2' target='_blank'>RFSoC 4x2</a>, laying the groundwork for a programmable waveform generation module later integrated into CHARTS." data-es="Programé y transmití formas de onda a través del DAC en el <a href='https://www.realdigital.org/hardware/rfsoc-4x2' target='_blank'>RFSoC 4x2</a>, sentando las bases para un módulo programable de generación de formas de onda que luego se integró en CHARTS.">Programmed and transmitted waveforms via the DAC on the <a href='https://www.realdigital.org/hardware/rfsoc-4x2' target='_blank'>RFSoC 4x2</a>, laying the groundwork for a programmable waveform generation module later integrated into CHARTS.</li>
-                                <li data-en="Gained hands-on experience in FPGA design, hardware verification, and system-level debugging." data-es="Adquirí experiencia práctica en diseño de FPGA.">Gained hands-on experience in FPGA design, hardware verification, and system-level debugging.</li>
+                                <li data-en="Designed and implemented a PYNQ overlay in Vivado to generate arbitrary waveform signals (up to 64 MB)."
+                                    data-es="Diseñé e implementé un overlay PYNQ en Vivado para generar señales de forma de onda arbitraria (hasta 64 MB).">
+                                    Designed and implemented a PYNQ overlay in Vivado to generate arbitrary waveform
+                                    signals (up to 64 MB).</li>
+                                <li data-en="Programmed and transmitted waveforms via the DAC on the <a href='https://www.realdigital.org/hardware/rfsoc-4x2' target='_blank'>RFSoC 4x2</a>, laying the groundwork for a programmable waveform generation module later integrated into CHARTS."
+                                    data-es="Programé y transmití formas de onda a través del DAC en el <a href='https://www.realdigital.org/hardware/rfsoc-4x2' target='_blank'>RFSoC 4x2</a>, sentando las bases para un módulo programable de generación de formas de onda que luego se integró en CHARTS.">
+                                    Programmed and transmitted waveforms via the DAC on the <a
+                                        href='https://www.realdigital.org/hardware/rfsoc-4x2' target='_blank'>RFSoC
+                                        4x2</a>, laying the groundwork for a programmable waveform generation module
+                                    later integrated into CHARTS.</li>
+                                <li data-en="Gained hands-on experience in FPGA design, hardware verification, and system-level debugging."
+                                    data-es="Adquirí experiencia práctica en diseño de FPGA.">Gained hands-on experience
+                                    in FPGA design, hardware verification, and system-level debugging.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3 data-en="Guided Research (EL7850), <a href='https://www.die.cl/' target='_blank'>DIE</a> — Universidad de Chile" data-es="Investigación guiada (EL7850), <a href='https://www.die.cl/' target='_blank'>DIE</a> — Universidad de Chile">Guided Research (EL7850), <a href='https://www.die.cl/' target='_blank'>DIE</a> — Universidad de Chile</h3>
-                            <p class="timeline-date" data-en="Mar 2024 – Jul 2024" data-es="Mar 2024 – Jul 2024">Mar 2024 – Jul 2024</p>
+                            <h3 data-en="Guided Research (EL7850), <a href='https://www.die.cl/' target='_blank'>DIE</a> — Universidad de Chile"
+                                data-es="Investigación guiada (EL7850), <a href='https://www.die.cl/' target='_blank'>DIE</a> — Universidad de Chile">
+                                Guided Research (EL7850), <a href='https://www.die.cl/' target='_blank'>DIE</a> —
+                                Universidad de Chile</h3>
+                            <p class="timeline-date" data-en="Mar 2024 – Jul 2024" data-es="Mar 2024 – Jul 2024">Mar
+                                2024 – Jul 2024</p>
                             <ul>
-                                <li data-en="Extended an RFSoC-based transmission system to handle arrays up to 4 GB, enabling the generation and analog injection of synthetic FRBs for end-to-end testing." data-es="Extendí un sistema de transmisión basado en RFSoC para manejar arreglos de hasta 4 GB, permitiendo la generación e inyección analógica de FRB sintéticos para pruebas end-to-end.">Extended an RFSoC-based transmission system to handle arrays up to 4 GB, enabling the generation and analog injection of synthetic FRBs for end-to-end testing.</li>
-                                <li data-en="Modeled FRB time-domain voltages using inverse Fourier transforms of dynamic spectra generated with fitburst." data-es="Modelé los voltajes en el dominio del tiempo de FRBs usando transformadas inversas de Fourier de espectros dinámicos generados con fitburst.">Modeled FRB time-domain voltages using inverse Fourier transforms of dynamic spectra generated with fitburst.</li>
-                                <li data-en="Validated the full signal chain from waveform synthesis to analog transmission, ensuring stability and reproducibility of injected FRB-like signals." data-es="Validé la cadena de señal completa desde la síntesis de la forma de onda hasta la transmisión analógica, asegurando la estabilidad y reproducibilidad de las señales inyectadas tipo FRB.">Validated the full signal chain from waveform synthesis to analog transmission, ensuring stability and reproducibility of injected FRB-like signals.</li>
+                                <li data-en="Extended an RFSoC-based transmission system to handle arrays up to 4 GB, enabling the generation and analog injection of synthetic FRBs for end-to-end testing."
+                                    data-es="Extendí un sistema de transmisión basado en RFSoC para manejar arreglos de hasta 4 GB, permitiendo la generación e inyección analógica de FRB sintéticos para pruebas end-to-end.">
+                                    Extended an RFSoC-based transmission system to handle arrays up to 4 GB, enabling
+                                    the generation and analog injection of synthetic FRBs for end-to-end testing.</li>
+                                <li data-en="Modeled FRB time-domain voltages using inverse Fourier transforms of dynamic spectra generated with fitburst."
+                                    data-es="Modelé los voltajes en el dominio del tiempo de FRBs usando transformadas inversas de Fourier de espectros dinámicos generados con fitburst.">
+                                    Modeled FRB time-domain voltages using inverse Fourier transforms of dynamic spectra
+                                    generated with fitburst.</li>
+                                <li data-en="Validated the full signal chain from waveform synthesis to analog transmission, ensuring stability and reproducibility of injected FRB-like signals."
+                                    data-es="Validé la cadena de señal completa desde la síntesis de la forma de onda hasta la transmisión analógica, asegurando la estabilidad y reproducibilidad de las señales inyectadas tipo FRB.">
+                                    Validated the full signal chain from waveform synthesis to analog transmission,
+                                    ensuring stability and reproducibility of injected FRB-like signals.</li>
                             </ul>
                         </div>
                     </div>
 
-                    
+
 
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3 data-en="Dunlap Institute Summer School — University of Toronto" data-es="Dunlap Institute Summer School — University of Toronto">Dunlap Institute Summer School — University of Toronto</h3>
+                            <h3 data-en="Dunlap Institute Summer School — University of Toronto"
+                                data-es="Dunlap Institute Summer School — University of Toronto">Dunlap Institute Summer
+                                School — University of Toronto</h3>
                             <p class="timeline-date" data-en="Jul 2025" data-es="Jul 2025">Jul 2025</p>
                             <ul>
-                                <li data-en="Built a two-element radio interferometer from scratch: antenna construction, RF analog chain, and digital signal processing using an SDR." data-es="Construí un interferómetro de radio de dos elementos desde cero: construcción de antenas, cadena analógica RF y procesamiento digital de señal usando un SDR.">Built a two-element radio interferometer from scratch: antenna construction, RF analog chain, and digital signal processing using an SDR.</li>
-                                <li data-en="Strengthened international collaboration experience and practical understanding of low-frequency interferometry." data-es="Fortalecí la experiencia de colaboración internacional y la comprensión práctica de la interferometría a baja frecuencia.">Strengthened international collaboration experience and practical understanding of low-frequency interferometry.</li>
+                                <li data-en="Built a two-element radio interferometer from scratch: antenna construction, RF analog chain, and digital signal processing using an SDR."
+                                    data-es="Construí un interferómetro de radio de dos elementos desde cero: construcción de antenas, cadena analógica RF y procesamiento digital de señal usando un SDR.">
+                                    Built a two-element radio interferometer from scratch: antenna construction, RF
+                                    analog chain, and digital signal processing using an SDR.</li>
+                                <li data-en="Strengthened international collaboration experience and practical understanding of low-frequency interferometry."
+                                    data-es="Fortalecí la experiencia de colaboración internacional y la comprensión práctica de la interferometría a baja frecuencia.">
+                                    Strengthened international collaboration experience and practical understanding of
+                                    low-frequency interferometry.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <h3 data-en="Undergraduate Thesis, AstroLab — Universidad de Chile" data-es="Tesis de pregrado, AstroLab — Universidad de Chile">Undergraduate Thesis, AstroLab — Universidad de Chile</h3>
-                            <p class="timeline-date" data-en="Dec 2024 – Present" data-es="Dic 2024 – Presente">Dec 2024 – Present</p>
+                            <h3 data-en="Undergraduate Thesis, AstroLab — Universidad de Chile"
+                                data-es="Tesis de pregrado, AstroLab — Universidad de Chile">Undergraduate Thesis,
+                                AstroLab — Universidad de Chile</h3>
+                            <p class="timeline-date" data-en="Dec 2024 – Present" data-es="Dic 2024 – Presente">Dec 2024
+                                – Present</p>
                             <ul>
-                                <li data-en="Developing a complete digital spectrometer system for CHARTS." data-es="Desarrollando un sistema espectrómetro digital completo para CHARTS.">Developing a complete digital spectrometer system for CHARTS.</li>
-                                <li data-en="Implementing custom FPGA firmware for the Xilinx RFSoC 4x2 to process multiple antennas on a single digitizer through demultiplexing." data-es="Implementando firmware FPGA personalizado para el Xilinx RFSoC 4x2 para procesar múltiples antenas en un único digitalizador mediante demultiplexación.">Implementing custom FPGA firmware for the Xilinx RFSoC 4x2 to process multiple antennas on a single digitizer through demultiplexing.</li>
-                                <li data-en="Key innovation: simultaneous demodulation of several antennas from a single ADC, enabling wide-bandwidth digitization of multiple 200 MHz channels." data-es="Innovación clave: demodulación simultánea de varias antenas desde un único ADC, permitiendo la digitalización de ancho de banda amplio de múltiples canales de 200 MHz.">Key innovation: simultaneous demodulation of several antennas from a single ADC, enabling wide-bandwidth digitization of multiple 200 MHz channels.</li>
-                                <li data-en="Scalability: system designed so a single digitizer can acquire data from up to 32 antennas within the 256-element array." data-es="Escalabilidad: sistema diseñado para que un solo digitalizador pueda adquirir datos de hasta 32 antenas dentro del arreglo de 256 elementos.">Scalability: system designed so a single digitizer can acquire data from up to 32 antennas within the 256-element array.</li>
+                                <li data-en="Developing a complete digital spectrometer system for CHARTS."
+                                    data-es="Desarrollando un sistema espectrómetro digital completo para CHARTS.">
+                                    Developing a complete digital spectrometer system for CHARTS.</li>
+                                <li data-en="Implementing custom FPGA firmware for the Xilinx RFSoC 4x2 to process multiple antennas on a single digitizer through demultiplexing."
+                                    data-es="Implementando firmware FPGA personalizado para el Xilinx RFSoC 4x2 para procesar múltiples antenas en un único digitalizador mediante demultiplexación.">
+                                    Implementing custom FPGA firmware for the Xilinx RFSoC 4x2 to process multiple
+                                    antennas on a single digitizer through demultiplexing.</li>
+                                <li data-en="Key innovation: simultaneous demodulation of several antennas from a single ADC, enabling wide-bandwidth digitization of multiple 200 MHz channels."
+                                    data-es="Innovación clave: demodulación simultánea de varias antenas desde un único ADC, permitiendo la digitalización de ancho de banda amplio de múltiples canales de 200 MHz.">
+                                    Key innovation: simultaneous demodulation of several antennas from a single ADC,
+                                    enabling wide-bandwidth digitization of multiple 200 MHz channels.</li>
+                                <li data-en="Scalability: system designed so a single digitizer can acquire data from up to 32 antennas within the 256-element array."
+                                    data-es="Escalabilidad: sistema diseñado para que un solo digitalizador pueda adquirir datos de hasta 32 antenas dentro del arreglo de 256 elementos.">
+                                    Scalability: system designed so a single digitizer can acquire data from up to 32
+                                    antennas within the 256-element array.</li>
                             </ul>
                         </div>
                     </div>
@@ -207,36 +667,48 @@
             </div>
         </section>
 
-                <div class="blog-content" style="margin-top: 3rem;">
-                    <h3 data-en="Technical Skills & Tools" data-es="Habilidades técnicas y herramientas">Technical Skills & Tools</h3>
-                    <p data-en="My work draws on a diverse toolkit spanning software development, FPGA design, and electromagnetic simulation:" data-es="Mi trabajo se apoya en un conjunto diverso de herramientas que abarcan desde desarrollo de software y diseño de FPGA hasta simulación electromagnética:">My work draws on a diverse toolkit spanning software development, FPGA design, and electromagnetic simulation:</p>
-                    <div class="skills-inline">
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">Verilog</span>
-                        <span class="skill-badge">Matlab</span>
-                        <span class="skill-badge">Vivado</span>
-                        <span class="skill-badge">HFSS</span>
-                        <span class="skill-badge">Simulink</span>
-                        <span class="skill-badge">LaTeX</span>
-                        <span class="skill-badge">Linux</span>
-                    </div>
-                </div>
+        <div class="blog-content" style="margin-top: 3rem;">
+            <h3 data-en="Technical Skills & Tools" data-es="Habilidades técnicas y herramientas">Technical Skills &
+                Tools</h3>
+            <p data-en="My work draws on a diverse toolkit spanning software development, FPGA design, and electromagnetic simulation:"
+                data-es="Mi trabajo se apoya en un conjunto diverso de herramientas que abarcan desde desarrollo de software y diseño de FPGA hasta simulación electromagnética:">
+                My work draws on a diverse toolkit spanning software development, FPGA design, and electromagnetic
+                simulation:</p>
+            <div class="skills-inline">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Verilog</span>
+                <span class="skill-badge">Matlab</span>
+                <span class="skill-badge">Vivado</span>
+                <span class="skill-badge">HFSS</span>
+                <span class="skill-badge">Simulink</span>
+                <span class="skill-badge">LaTeX</span>
+                <span class="skill-badge">Linux</span>
             </div>
+        </div>
+        </div>
         </section>
 
         <!-- Gallery Section -->
         <section id="gallery" class="gallery">
             <div class="container">
-                <h2 data-en="Astrophotography Gallery" data-es="Galería de astrofotografía">Astrophotography Gallery</h2>
-               <div class="blog-content">
-                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;" 
-                    data-en="Beyond radio astronomy, I enjoy capturing the universe through deep-sky astrophotography. I currently work with a 70mm refractor and a modified Canon camera (IR filter removed) to better capture hydrogen emissions from nebulae. While I continue refining my acquisition and processing techniques, I'm eager to expand into galaxy and planetary imaging, a pursuit that will require investing in larger aperture telescopes and more specialized equipment." 
-                    data-es="Más allá de la radioastronomía, disfruto capturando el universo a través de la astrofotografía de cielo profundo. Actualmente trabajo con un refractor de 70 mm y una cámara Canon modificada (filtro IR removido) para captar con mayor sensibilidad las emisiones de hidrógeno en nebulosas. Aunque sigo perfeccionando mis técnicas de adquisición y procesamiento, aspiro a expandir mis capacidades hacia la fotografía de galaxias y planetas, lo que requerirá invertir en equipos de mayor apertura y capacidad.">
-                        Beyond radio astronomy, I enjoy capturing the universe through deep-sky astrophotography. I currently work with a 70mm refractor and a modified Canon camera (IR filter removed) to better capture hydrogen emissions from nebulae. While I continue refining my acquisition and processing techniques, I'm eager to expand into galaxy and planetary imaging, a pursuit that will require investing in larger aperture telescopes and more specialized equipment.
+                <h2 data-en="Astrophotography Gallery" data-es="Galería de astrofotografía">Astrophotography Gallery
+                </h2>
+                <div class="blog-content">
+                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;"
+                        data-en="Beyond radio astronomy, I enjoy capturing the universe through deep-sky astrophotography. I currently work with a 70mm refractor and a modified Canon camera (IR filter removed) to better capture hydrogen emissions from nebulae. While I continue refining my acquisition and processing techniques, I'm eager to expand into galaxy and planetary imaging, a pursuit that will require investing in larger aperture telescopes and more specialized equipment."
+                        data-es="Más allá de la radioastronomía, disfruto capturando el universo a través de la astrofotografía de cielo profundo. Actualmente trabajo con un refractor de 70 mm y una cámara Canon modificada (filtro IR removido) para captar con mayor sensibilidad las emisiones de hidrógeno en nebulosas. Aunque sigo perfeccionando mis técnicas de adquisición y procesamiento, aspiro a expandir mis capacidades hacia la fotografía de galaxias y planetas, lo que requerirá invertir en equipos de mayor apertura y capacidad.">
+                        Beyond radio astronomy, I enjoy capturing the universe through deep-sky astrophotography. I
+                        currently work with a 70mm refractor and a modified Canon camera (IR filter removed) to better
+                        capture hydrogen emissions from nebulae. While I continue refining my acquisition and processing
+                        techniques, I'm eager to expand into galaxy and planetary imaging, a pursuit that will require
+                        investing in larger aperture telescopes and more specialized equipment.
                     </p>
 
                     <p style="text-align: center;">
-                        <span data-en="Follow my astrophotography journey at" data-es="Sigue mi trabajo en astrofotografía en">Follow my astrophotography journey at</span> <a href="https://www.instagram.com/franquis_astro/" target="_blank" style="color: var(--primary); font-weight: bold;">@franquis_astro</a>
+                        <span data-en="Follow my astrophotography journey at"
+                            data-es="Sigue mi trabajo en astrofotografía en">Follow my astrophotography journey
+                            at</span> <a href="https://www.instagram.com/franquis_astro/" target="_blank"
+                            style="color: var(--primary); font-weight: bold;">@franquis_astro</a>
                     </p>
                 </div>
                 <div class="gallery-container">
@@ -273,9 +745,11 @@
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 Bruno Pollarolo</p>
-                <p><span data-en="Contact:" data-es="Contacto:">Contact:</span> <a href="mailto:bruno.pollarolo@ug.uchile.cl">bruno.pollarolo@ug.uchile.cl</a></p>
+                <p><span data-en="Contact:" data-es="Contacto:">Contact:</span> <a
+                        href="mailto:bruno.pollarolo@ug.uchile.cl">bruno.pollarolo@ug.uchile.cl</a></p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
